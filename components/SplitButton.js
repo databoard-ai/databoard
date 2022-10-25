@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-function SplitButton(title, icon, color, onPressed) {
+function SplitButton(title, icon, color) {
 asset = "assets/"+icon
 col = 'bg-'+color
     return 
