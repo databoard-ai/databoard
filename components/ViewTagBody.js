@@ -1,8 +1,12 @@
+import Image from 'next/image'
+import Navbar from '../components/NavBar'
+import AuthButton from '../components/AuthButton'
+import SplitButton from '../components/SplitButton'
+const sendIcon = require('../public/assets/pie-chart.png')
+const filterIcon = require('../public/assets/filter_icon.png')
+const downChevronIcon = require('../public/assets/down_chevron.png')
 export default function ViewTagBody() {
-  import Image from 'next/image'
-  import Navbar from '../components/NavBar'
-  import AuthButton from '../components/AuthButton'
-  import SplitButton from '../components/SplitButton'
+
     return (
       <div className="bg-defaultBackground w-full mx-[34px] h-[900px]">
         <div className="flex">
