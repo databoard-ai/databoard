@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function Navbar() {
     return (
-        <header className="sticky top-0 z-50 grid grid-cols-3 py-7 px-5 bg-primaryBlue">
+        <header className="sticky top-0 z-50 grid grid-cols-3 py-7 px-5 bg-primaryBlue font-montserrat">
 
             {/* Left */}
             <div className="relative flex items-center h-10 cursor-pointer md:px-10  ">

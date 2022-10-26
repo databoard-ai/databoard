@@ -18,6 +18,7 @@ module.exports = {
       'inactiveText':'#838282',
       'blackMain':'#121212',
       'pureWhite':' #FEFEFE',
+      'defaultBackground':'#F4F4F4',
       'primaryRed':' #FA4F4F'
     },
     fontFamily:{
