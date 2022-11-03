@@ -3,7 +3,7 @@ import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
 const googleLogo = require('../public/assets/flat-color-icons_google.png')
 const facebookLogo = require('../public/assets/logos_facebook.png')
-const signInImg = require('../public/assets/sign in.png')
+const bg_Img = require('../public/assets/sign in.png')
 import AuthInput from '../components/AuthInput'
 
 const Login: NextPage = () => {
@@ -54,7 +54,7 @@ const Login: NextPage = () => {
                 <Image
                     className='pt-[149px] ml-[88px]'
                     alt='Sign in'
-                    src={signInImg}
+                    src={bg_Img}
                 />
             </div>
         </>

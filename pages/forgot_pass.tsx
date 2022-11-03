@@ -4,7 +4,7 @@ import AuthInput from '../components/AuthInput'
 import Image from 'next/image'
 const googleLogo = require('../public/assets/flat-color-icons_google.png')
 const facebookLogo = require('../public/assets/logos_facebook.png')
-const forgotPassImg = require('../public/assets/forgot_password_bg.png')
+const bg_Img = require('../public/assets/forgot_password_bg.png')
 
 const ForgotPass: NextPage = () => {
     return(
@@ -25,7 +25,7 @@ const ForgotPass: NextPage = () => {
                 <Image
                     className='pt-[110px] ml-[70px]'
                     alt='Sign in'
-                    src={forgotPassImg}
+                    src={bg_Img}
                 />
             </div>
         </>
