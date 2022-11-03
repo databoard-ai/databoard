@@ -43,26 +43,26 @@ const Login: NextPage = () => {
                         <div className="flex-grow border-t border-[#121212] border-opacity-[0.7]"></div>
                     </div>
                     <div className='mx-[88px] flex justify-center'>
-                        <Image
-                            className='inline mr-[20px]'
+                        <a href='#' className='mr-[20px]'><Image
+                            className='inlinetransition duration-500 ease-in-out transform hover:scale-110'
                             alt='filter'
                             src={googleLogo}
                             height='30.15'
                             width='30.15'
-                        />
-                        <Image
-                            className='inline'
+                        /></a>
+                        <a href='#'><Image
+                            className='inline transition duration-500 ease-in-out transform hover:scale-110'
                             alt='filter'
                             src={facebookLogo}
                             height='30.15'
                             width='30.15'
-                        />
+                        /></a>
                     </div>
                 </form>
                 <Image
-                className='pt-[149px] ml-[88px]'
-                alt='Sign in'
-                src={signInImg}
+                    className='pt-[149px] ml-[88px]'
+                    alt='Sign in'
+                    src={signInImg}
                 />
             </div>
         </>
