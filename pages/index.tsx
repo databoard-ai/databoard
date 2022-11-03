@@ -5,6 +5,7 @@ import Navbar from '../components/NavBar'
 import AuthButton from '../components/AuthButton'
 import SplitButton from '../components/SplitButton'
 import Login from './login'
+import ForgotPass from './forgot_pass'
 const sendIcon = require('../public/assets/pie-chart.png')
 const filterIcon = require('../public/assets/filter_icon.png')
 const downChevronIcon = require('../public/assets/down_chevron.png')
@@ -75,7 +76,8 @@ const Home: NextPage = () => {
         <title>Databoard</title>
         <link rel="icon" href="/fav.png" />
       </Head>
-      <Login/>
+      {/* <Login/> */}
+      <ForgotPass/>
     </div>
   )
 }

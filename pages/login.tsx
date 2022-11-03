@@ -4,15 +4,7 @@ import Image from 'next/image'
 const googleLogo = require('../public/assets/flat-color-icons_google.png')
 const facebookLogo = require('../public/assets/logos_facebook.png')
 const signInImg = require('../public/assets/sign in.png')
-
-const AuthInput = ({inpName, title}) => {
-    return(
-        <div className='ml-[88px] mb-[24px]'>
-            <label className='block mb-[12px] text-[16px] font-medium' htmlFor={inpName}>{title}</label>
-            <input className="w-[360px] h-[60px] p-5 rounded-[8px] border border-opacity-[0.3] border-[#121212]" type="text" name={inpName} placeholder={title}/>
-        </div>
-    )
-}
+import AuthInput from '../components/AuthInput'
 
 const Login: NextPage = () => {
     return(
@@ -44,7 +36,7 @@ const Login: NextPage = () => {
                     </div>
                     <div className='mx-[88px] flex justify-center'>
                         <a href='#' className='mr-[20px]'><Image
-                            className='inlinetransition duration-500 ease-in-out transform hover:scale-110'
+                            className='inline transition duration-500 ease-in-out transform hover:scale-110'
                             alt='filter'
                             src={googleLogo}
                             height='30.15'
@@ -69,4 +61,4 @@ const Login: NextPage = () => {
     )
   }
   
-  export default Login
+  export default Login;
