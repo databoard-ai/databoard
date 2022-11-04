@@ -19,7 +19,8 @@ module.exports = {
       'blackMain':'#121212',
       'pureWhite':' #FEFEFE',
       'defaultBackground':'#F4F4F4',
-      'primaryRed':' #FA4F4F'
+      'primaryRed':' #FA4F4F',
+      'mainBlack':'#121212'
     },
     fontFamily:{
       'montserrat':['Montserrat', 'sans-serif']

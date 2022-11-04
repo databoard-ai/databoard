@@ -1,45 +1,70 @@
-import { useTable } from "react-table"
+import axios from "axios"
+import { useMemo } from "react"
+import DataTable from "react-data-table-component"
+import MOCK_DATA from './MOCK_DATA.json'
+import Checkbox from '../components/Checkbox'
 
-function DataboardTable({ columns, data }) {
+function DataboardTable() {
 
-    const {
-        getTableProps,
-        getTableBodyProps,
-        headerGroups,
-        rows,
-        prepareRow,
-        state
-    } = useTable({ columns, data })
+
+    const data = MOCK_DATA
+
+
+    const columns =
+        [
+            {
+                name: "ID",
+                selector: row => row.id,
+                
+            },
+
+            {
+                name: "Name",
+                selector: row => row.name,
+                sortable:true
+            },
+
+            {
+                name: "Gender",
+                selector: row => row.gender,
+                sortable:true
+            },
+
+            {
+                name: "Time In",
+                selector: row => row.time_in,
+                sortable:true
+            },
+
+            {
+                name: "Time Out",
+                selector: row => row.time_out,
+                sortable:true
+            },
+            {
+                name: "Action",
+                cell:(row)=><button className="btn btn-primary">Options</button>,
+
+            },
+
+        ];
+    
     return (
-        <table {...getTableProps()}>
-            <thead>
-                {headerGroups.map((headerGroup) => (
-                    <tr {...headerGroup.getHeaderGroupProps()}>
+  <div className=" w-full">
+ < DataTable
+            columns={columns}
+            data={data}
+            pagination
+            fixedHeader={false}
+            fixedHeaderScrollHeight="600px"
+            className=""
+            selectableRows
+            selectableRowsHighlight
+           highlightOnHover
+           
+            />
 
-                        {headerGroup.headers.map((column) => (
-                            <th {...column.getHeaderGroupProps()}>{column.render("Header")}</th>
-                        ))}
-                    </tr>
-                ))}
-            
-            </thead>
-            <tbody {...getTableBodyProps()}>
-               {rows.map((row,i)=>{
-                    prepareRow(row)
-                return (
-            <tr {...row.getRowProps()}>
-                      {row.cells.map((cell)=>{
-                        return (
-                            <td className="px- py-4 whitespace-nowrap text-sm leading-5 font-medium text-gray-900">
-
-                            </td>
-                        )
-                      })}
-            </tr>
-                )
-               })}
-            </tbody>
-        </table>
+  </div>
     )
 }
 

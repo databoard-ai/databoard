@@ -1,74 +1,51 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from '../components/NavBar'
-import AuthButton from '../components/AuthButton'
-import SplitButton from '../components/SplitButton'
-const sendIcon = require('../public/assets/pie-chart.png')
-const filterIcon = require('../public/assets/filter_icon.png')
-const downChevronIcon = require('../public/assets/down_chevron.png')
+import DataOptionsSection from '../components/DataOptionsSection'
+import ViewTagBody from '../components/ViewTagBody'
+import DataboardTable from '../components/DataboardTable'
+import MessageModal from '../components/MessageModal'
+import SendBroadcastButton from '../components/buttons/SendBroadcastButton'
+import DownloadDropDown from '../components/DownloadDropDown'
+import FilterDropDown from '../components/FilterDropDown'
+import ClearFilterButton from '../components/ClearFilterButton'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const handleOnClose = () => setShowModal(false)
   return (
-    <div className="font-montserrat">
+    <>
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Databoard</title>
         <link rel="icon" href="/fav.png" />
       </Head>
+      <div className="font-montserrat h-full w-screen">
       <Navbar />
-      <div className="bg-defaultBackground w-full mx-[34px] h-[900px]">
-        <div className="flex">
-          <div className="w-full h-[120px] flex py-[30px] px-[24px] gap-x-60">
-            <div className="bg-pureWhite w-[127.17px] h-[28px] flex items-center py-[4px] my-4 hover:scale-105 transition transform duration-200 ease-out">
-              <div className=" mx-2">
-                <Image
-                  alt='filter'
-                  src={filterIcon}
-                  height='9'
-                  width='9.17'
-                  color='#4283E4'
-                />
-              </div>
-              <p className="text-[16px] text-primaryBlue text-center">Add Filter</p>
-              <div className=" mx-2 items-center">
-                <Image
-                  alt='chevron'
-                  src={downChevronIcon}
-                  height='6'
-                  width='6'
-                  color='#4283E4'
-                />
-              </div>
+      <div className="bg-defaultBackground">
+        <div className="w-full h-[120px] flex py-[30px] px-[24px] justify-between">
+          <div className='flex justify-between items-center'>
+            <div className='mr-2'>
+              <FilterDropDown />
             </div>
-            <div className=''>
-              <SplitButton title="Broadcast Message" icon={sendIcon} color="primaryBlue" />
-            </div>
-            <div className="bg-pureWhite w-[164px] h-[60px] flex items-center py-[4px] my-1 rounded-r-lg hover:scale-105 transition transform duration-200 ease-out">
-              <p className="text-[16px] text-inactiveText text-center px-2 font-normal">Download</p>
-              <div className=" mx-2 flex hover:border-x-2 hover:border-y-2 hover:border-primaryBlue py-2 px-1">
-                <p className="text-[14px] text-inactiveText text-center px-2 font-light">CSV</p>
-                <div className='relative '>
-                  <Image
-                    alt='chevron'
-                    src={downChevronIcon}
-                    height='6'
-                    width='6'
-                    color='#4283E4'
-                    className=' align-top '
-                  />
-                </div>
-              </div>
+            <div className='mr-2'>
+              <ClearFilterButton />
             </div>
           </div>
+          <div className='flex justify-between items-center'>
+            <div className=' mr-4'>
+              <SendBroadcastButton title="Broadcast Message" color="primaryBlue" onPressed={() => setShowModal(true)} />
+            </div>
+            <DownloadDropDown />
+          </div>
         </div>
-
+        <DataboardTable />
       </div>
-      <div>
-        <AuthButton title="Create new tag" />
-      </div>
-      <button  title="Contact Sale"
-        className="fixed z-90 bottom-10 right-8 bg-blue-600 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300">&#9993;</button>
+      <MessageModal visible={showModal} onClose={handleOnClose} />
     </div>
+    </>
   )
 }
 
