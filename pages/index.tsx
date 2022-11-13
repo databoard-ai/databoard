@@ -10,11 +10,19 @@ import DownloadDropDown from '../components/DownloadDropDown'
 import FilterDropDown from '../components/FilterDropDown'
 import ClearFilterButton from '../components/ClearFilterButton'
 import { useState } from 'react'
+import Table from '../components/Table'
+import  MOCK_DATA from '../components/MOCK_DATA.json'
+import ContactDetailsModal from '../components/ContactDetailsModal'
+
+
 
 const Home: NextPage = () => {
   const [showModal, setShowModal] = useState(false)
-
+  
+ const data= MOCK_DATA
   const handleOnClose = () => setShowModal(false)
+
+  
   return (
     <>
       <Head>
@@ -22,10 +30,11 @@ const Home: NextPage = () => {
         <title>Databoard</title>
         <link rel="icon" href="/fav.png" />
       </Head>
-      <div className="font-montserrat h-full w-screen">
+      <div className="font-montserrat h-full">
       <Navbar />
-      <div className="bg-defaultBackground">
-        <div className="w-full h-[120px] flex py-[30px] px-[24px] justify-between">
+      <div className="">
+       <div>
+       <div className=" h-[120px] flex py-[30px] mx-[24px] px-4 justify-between bg-defaultBackground">
           <div className='flex justify-between items-center'>
             <div className='mr-2'>
               <FilterDropDown />
@@ -41,9 +50,12 @@ const Home: NextPage = () => {
             <DownloadDropDown />
           </div>
         </div>
-        <DataboardTable />
+       </div>
+        <Table/>
+        {/* <DataboardTable /> */}
       </div>
       <MessageModal visible={showModal} onClose={handleOnClose} />
+     
     </div>
     </>
   )

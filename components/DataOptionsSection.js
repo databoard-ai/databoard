@@ -9,15 +9,14 @@ function DataOptionsSection() {
     const [showModal,setShowModal]=useState(false)
     
     const handleOnClose = ()=>setShowModal(false)
+    const handleFilterContext=()=>('');
 
     return (
         <>
             <div className="w-screen h-[120px] flex py-[30px] px-[24px] justify-between">
-
                 <div className='flex justify-between items-center'>
-
                     <div className='mr-2'>
-                        <FilterDropDown />
+                        <FilterDropDown  onTap={handleFilterContext}/>
                     </div>
                     <div className='mr-2'>
                         <ClearFilterButton />
@@ -27,12 +26,8 @@ function DataOptionsSection() {
                     <div className=' mr-4'>
                         <SendBroadcastButton title="Broadcast Message"  color="primaryBlue" onClose={handleOnClose} onClick={()=>setShowModal(true)}/>
                     </div>
-
                     <DownloadDropDown />
                 </div>
-
-             
-
             </div>
         </>
     )
