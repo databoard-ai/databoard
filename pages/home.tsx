@@ -13,32 +13,13 @@ const Security = require('../public/assets/Privacy.png')
 const Visual = require('../public/assets/Visual.png')
 const Connected = require('../public/assets/Connected.png')
 const Avatar = require('../public/assets/avatar.png')
-import AuthInput from '../components/AuthInput'
-import AuthDropdown from '../components/AuthDropdown'
+import Navbar from '../components/HomePages/Navbar'
 import { connected } from 'process'
 
 const Index: NextPage = () => {
     return(
         <>
-            <div className='nav z-50 bg-[#F4F4F4] h-[90px] flex items-center px-[150px] justify-between sticky top-0'>
-                <div className=''>
-                    <a href='#'><Image
-                    src={Logo1}
-                    alt = 'Logo'
-                    /></a>
-                </div>
-                <div className='flex'>
-                    <a href="#" className='mx-[15px]'>Home</a>
-                    <a href="#" className='mx-[15px]'>Board</a>
-                    <a href="#" className='mx-[15px]'>Pricing</a>
-                    <a href="#" className='mx-[15px]'>Resources</a>
-                    <a href="#" className='mx-[15px]'>About Us</a>
-                </div>
-                <div className='flex gap-x-3'>
-                    <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>Log In</span></a>
-                    <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px] bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
-                </div>
-            </div>
+            <Navbar/>
             <div className='banner'>
                 <div className='banner-content absolute top-[35%] left-[25%] text-center'>
                     <span className='block text-[64px] font-semibold text-pureWhite'>Empowering you in a <br/><span className='text-primaryBlue'>Data-driven</span> world</span>
