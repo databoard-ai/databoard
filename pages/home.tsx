@@ -3,13 +3,17 @@ import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
 const Logo1 = require('../public/assets/logo-home.png')
 const Banner1 = require('../public/assets/banner-home.png')
+const Iphone = require('../public/assets/iphone.png')
+const Ellipses = require('../public/assets/ellipses.png')
+const Playstore = require('../public/assets/playstore.png')
+const Appstore = require('../public/assets/applestore.png')
 import AuthInput from '../components/AuthInput'
 import AuthDropdown from '../components/AuthDropdown'
 
 const Index: NextPage = () => {
     return(
         <>
-            <div className='nav bg-[#F4F4F4] h-[90px] flex items-center px-[150px] justify-between sticky top-0'>
+            <div className='nav z-50 bg-[#F4F4F4] h-[90px] flex items-center px-[150px] justify-between sticky top-0'>
                 <div className=''>
                     <a href='#'><Image
                     src={Logo1}
@@ -45,6 +49,42 @@ const Index: NextPage = () => {
                 alt='banner'
                 src={Banner1}
                 />
+            </div>
+            <div className='cta grid grid-cols-2'>
+                <div className='mt-[90px] mb-[49.5px] ml-[20px]'>
+                    <Image 
+                    className='float-left w-[400px] mb-[-250px]'
+                    alt='ellipse'
+                    src={Ellipses}/>
+                    <center>
+                    <Image 
+                    className='relative top-[-35px] w-[350px]'
+                    alt='phone'
+                    src={Iphone}/>
+                    </center>
+                    <Image 
+                    className='float-right w-[400px] mt-[-210px]'
+                    alt='ellipse'
+                    src={Ellipses}/>
+                </div>
+                <div className='mt-[140px] ml-[20px]'>
+                    <span className='block text-[64px] text-primaryBlue font-semibold'>Meet clocker</span>
+                    <span className='block text-[24px] text-black'>The easist way to create a digital footprint.</span>
+                    <span className='block text-[16px]'>Clocker helps users to check into Access points, Events, and locations in Seconds.
+                        <br />
+                        Databoard works hand in hand with cloker, to drive efficieny with data. 
+                    </span>
+                    <div>
+                        <Image 
+                        className='inline'
+                        alt='playstore'
+                        src={Playstore}/>
+                        <Image 
+                        className='inline'
+                        alt='applestore'
+                        src={Appstore}/>
+                    </div>
+                </div>
             </div>
         </>
     )
