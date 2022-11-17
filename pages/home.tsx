@@ -9,8 +9,13 @@ const Playstore = require('../public/assets/playstore.png')
 const Appstore = require('../public/assets/applestore.png')
 const Cta2 = require('../public/assets/cta2-img.png')
 const PhoneIco = require('../public/assets/phone-ico.png')
+const Security = require('../public/assets/Privacy.png')
+const Visual = require('../public/assets/Visual.png')
+const Connected = require('../public/assets/Connected.png')
+const Avatar = require('../public/assets/avatar.png')
 import AuthInput from '../components/AuthInput'
 import AuthDropdown from '../components/AuthDropdown'
+import { connected } from 'process'
 
 const Index: NextPage = () => {
     return(
@@ -117,6 +122,150 @@ const Index: NextPage = () => {
                     src={Cta2}/>
                     <div className='w-[50px] h-[50px] border-4 border-primaryBlue rounded-full relative bottom-[30px] left-[-20px]'></div>
                 </div>
+            </div>
+            <div className='cta bg-primaryBlue px-10'>
+                <div className='flex justify-around'>
+                    <div>
+                        <span className='block text-[40px] font-semibold text-pureWhite mt-32'>Privacy-focused <br/>Data acquisitor</span>
+                        <br />
+                        <span className='block text-pureWhite text-[16px]'>We focus on the data security of our users and <br/>priotizie thier privacy before anything else</span>
+                    </div>
+                    <div>
+                        <Image
+                        className='w-[400px]' 
+                        alt='secure'
+                        src={Security}/>
+                    </div>
+                </div>
+                <div className='flex justify-around'>
+                    <div>
+                        <Image
+                        className='w-[400px]' 
+                        alt='visual'
+                        src={Visual}/>
+                    </div>
+                    <div>
+                        <span className='block text-[40px] font-semibold text-pureWhite mt-32'>Insights and <br/>Reporting</span>
+                        <br />
+                        <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br/>perfromance optimization</span>
+                    </div>
+                </div>
+                <div className='flex justify-around'>
+                    <div>
+                        <span className='block text-[40px] font-semibold text-pureWhite mt-32'>Communication tool</span>
+                        <br />
+                        <span className='block text-pureWhite text-[16px]'>Target and Engage your Databoard <br />audience with our communication tools.</span>
+                    </div>
+                    <div>
+                        <Image
+                        className='w-[400px]' 
+                        alt='connect'
+                        src={Connected}/>
+                    </div>
+                </div>
+            </div>
+            <div className='cta bg-[#010A26] py-9'>
+                <div>
+                    <h2 className='text-pureWhite text-[30px] text-center font-semibold'>Brands that trust us</h2>
+                </div>
+                <div className='flex justify-around'>
+                    <Image 
+                    alt='brands'
+                    src={Logo1}/>
+                    <Image 
+                    alt='brands'
+                    src={Logo1}/>
+                    <Image 
+                    alt='brands'
+                    src={Logo1}/>
+                    <Image 
+                    alt='brands'
+                    src={Logo1}/>
+                </div>
+            </div>
+            <div className='cta bg-pureWhite py-9'>
+                <div>
+                    <h2 className='text-[30px] text-center font-semibold'>What our customers are saying</h2>
+                </div>
+                <div className='flex justify-around mt-5 px-10'>
+                    <div className='w-[25%] bg-primaryBlue'>
+                        <div className='p-5'>
+                            <span className='block text-justify text-pureWhite'>
+                                Eget justo vitae habitant dignissim arcu ut nibh fermentum. Duis nibh facilisis vulputate amet. Libero sodales urna duis sem nec amet libero. Interdum lectus eget iaculis sit. Semper faucibus ac quisque amet libero donec vestibulum. Et est adipiscing velit mus. Ac sed ac venenatis sit duis pellentesque porttitor ullamcorper tellus. Consectetur non metus neque sit faucibus. Imperdiet ante a enim pretium. Tortor faucibus sed odio placerat magnis sem neque ac. Vel diam in gravida agittis fusce mauris suspendisse.
+                            </span>
+                        </div>
+                        <div className='p-5 pt-0 flex items-center'>
+                            <div>
+                                <Image 
+                                className='w-[60px]'
+                                alt='avatar'
+                                src={Avatar}/>
+                            </div>
+                            <div className='ml-2'>
+                                <span className='block text-[18px] text-pureWhite'>James Edwin</span>
+                                <span className='block text-[12px] text-pureWhite'>Manger -Aviex Media</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='w-[25%] bg-primaryBlue'>
+                        <div className='p-5'>
+                            <span className='block text-justify text-pureWhite'>
+                                Eget justo vitae habitant dignissim arcu ut nibh fermentum. Duis nibh facilisis vulputate amet. Libero sodales urna duis sem nec amet libero. Interdum lectus eget iaculis sit. Semper faucibus ac quisque amet libero donec vestibulum. Et est adipiscing velit mus. Ac sed ac venenatis sit duis pellentesque porttitor ullamcorper tellus. Consectetur non metus neque sit faucibus. Imperdiet ante a enim pretium. Tortor faucibus sed odio placerat magnis sem neque ac. Vel diam in gravida agittis fusce mauris suspendisse.
+                            </span>
+                        </div>
+                        <div className='p-5 pt-0 flex items-center'>
+                            <div>
+                                <Image 
+                                className='w-[60px]'
+                                alt='avatar'
+                                src={Avatar}/>
+                            </div>
+                            <div className='ml-2'>
+                                <span className='block text-[18px] text-pureWhite'>James Edwin</span>
+                                <span className='block text-[12px] text-pureWhite'>Manger -Aviex Media</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='w-[25%] bg-primaryBlue'>
+                        <div className='p-5'>
+                            <span className='block text-justify text-pureWhite'>
+                                Eget justo vitae habitant dignissim arcu ut nibh fermentum. Duis nibh facilisis vulputate amet. Libero sodales urna duis sem nec amet libero. Interdum lectus eget iaculis sit. Semper faucibus ac quisque amet libero donec vestibulum. Et est adipiscing velit mus. Ac sed ac venenatis sit duis pellentesque porttitor ullamcorper tellus. Consectetur non metus neque sit faucibus. Imperdiet ante a enim pretium. Tortor faucibus sed odio placerat magnis sem neque ac. Vel diam in gravida agittis fusce mauris suspendisse.
+                            </span>
+                        </div>
+                        <div className='p-5 pt-0 flex items-center'>
+                            <div>
+                                <Image 
+                                className='w-[60px]'
+                                alt='avatar'
+                                src={Avatar}/>
+                            </div>
+                            <div className='ml-2'>
+                                <span className='block text-[18px] text-pureWhite'>James Edwin</span>
+                                <span className='block text-[12px] text-pureWhite'>Manger -Aviex Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex mt-9 justify-center'>
+                    <div className='bg-primaryBlue w-12 h-2 rounded-full'></div>
+                    <div className='bg-primaryBlue w-2 h-2 rounded-full ml-2'></div>
+                    <div className='bg-primaryBlue w-2 h-2 rounded-full ml-1'></div>
+                    <div className='bg-primaryBlue w-2 h-2 rounded-full ml-1'></div>
+               </div>
+            </div>
+            <div className='flex justify-center'>
+                <div className='w-[70%] my-9'>
+                    <div>
+                        <span className='block text-[64px] text-center'>Join Databoard to enjoy our 14-day Free trial</span>
+                    </div>
+                    <div className='flex gap-3 justify-center mt-9'>
+                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px] bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
+                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>Log In</span></a>
+                    </div>
+                </div>
+            </div>
+            <div className='footer flex h-[300px] bg-[#010A26]'>
+                <span className='block m-auto text-pureWhite'>footer</span>
             </div>
         </>
     )
