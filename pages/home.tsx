@@ -7,6 +7,8 @@ const Iphone = require('../public/assets/iphone.png')
 const Ellipses = require('../public/assets/ellipses.png')
 const Playstore = require('../public/assets/playstore.png')
 const Appstore = require('../public/assets/applestore.png')
+const Cta2 = require('../public/assets/cta2-img.png')
+const PhoneIco = require('../public/assets/phone-ico.png')
 import AuthInput from '../components/AuthInput'
 import AuthDropdown from '../components/AuthDropdown'
 
@@ -84,6 +86,36 @@ const Index: NextPage = () => {
                         alt='applestore'
                         src={Appstore}/>
                     </div>
+                </div>
+            </div>
+            <div className='cta grid grid-cols-2 justify-center bg-[#F4F4F4]'>
+                <div className='pl-[20%]'>
+                    <span className='block text-[50px] text-primaryBlue font-semibold mt-[100px]'>Contact Us  About 
+                        <br />
+                        Databoard Software
+                    </span>
+                    <span className='block text-[15px]'>We will love to help you optimize performance and establish peak efficiency with Databoard.  Let us help you get more out of your visitors without breaking privacy.</span>
+                    <br />
+                    <div className='flex gap-2'>
+                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-auto px-1 bg-primaryBlue'>
+                            <span className='m-auto text-pureWhite'>
+                            <Image
+                            className='inline mr-1'
+                            alt='ico'
+                            src={PhoneIco}/>
+                            Call Sales
+                            </span>
+                        </a>
+                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
+                    </div>
+                </div>
+                <div>
+                    <div className='w-[50px] h-[50px] border-4 border-primaryBlue rounded-full relative top-[30px] left-[475px]'></div>
+                    <Image
+                    className='w-[500px]'
+                    alt='cta2'
+                    src={Cta2}/>
+                    <div className='w-[50px] h-[50px] border-4 border-primaryBlue rounded-full relative bottom-[30px] left-[-20px]'></div>
                 </div>
             </div>
         </>
