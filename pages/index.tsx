@@ -11,6 +11,7 @@ import CreateTag from './create_tag'
 import Index from './home'
 import Pricing from './pricing'
 import About from './about'
+import Blogs from './blogs'
 const sendIcon = require('../public/assets/pie-chart.png')
 const filterIcon = require('../public/assets/filter_icon.png')
 const downChevronIcon = require('../public/assets/down_chevron.png')
@@ -87,7 +88,8 @@ const Home: NextPage = () => {
       {/* <CreateTag/> */}
       {/* <Index/> */}
       {/* <Pricing/> */}
-      <About/>
+      {/* <About/> */}
+      <Blogs/>
     </div>
   )
 }
