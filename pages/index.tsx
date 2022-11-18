@@ -9,6 +9,8 @@ import ForgotPass from './forgot_pass'
 import Setup from './setup'
 import CreateTag from './create_tag'
 import Index from './home'
+import Pricing from './pricing'
+import About from './about'
 const sendIcon = require('../public/assets/pie-chart.png')
 const filterIcon = require('../public/assets/filter_icon.png')
 const downChevronIcon = require('../public/assets/down_chevron.png')
@@ -83,7 +85,9 @@ const Home: NextPage = () => {
       {/* <ForgotPass/> */}
       {/* <Setup/> */}
       {/* <CreateTag/> */}
-      <Index/>
+      {/* <Index/> */}
+      {/* <Pricing/> */}
+      <About/>
     </div>
   )
 }

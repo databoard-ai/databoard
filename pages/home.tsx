@@ -14,12 +14,15 @@ const Visual = require('../public/assets/Visual.png')
 const Connected = require('../public/assets/Connected.png')
 const Avatar = require('../public/assets/avatar.png')
 import Navbar from '../components/HomePages/Navbar'
+import Footer from '../components/HomePages/Footer'
+import Join from '../components/HomePages/Join'
+import Brands from '../components/HomePages/Brands'
 import { connected } from 'process'
 
 const Index: NextPage = () => {
     return(
         <>
-            <Navbar/>
+            <Navbar active='home'/>
             <div className='banner'>
                 <div className='banner-content absolute top-[35%] left-[25%] text-center'>
                     <span className='block text-[64px] font-semibold text-pureWhite'>Empowering you in a <br/><span className='text-primaryBlue'>Data-driven</span> world</span>
@@ -145,25 +148,7 @@ const Index: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div className='cta bg-[#010A26] py-9'>
-                <div>
-                    <h2 className='text-pureWhite text-[30px] text-center font-semibold'>Brands that trust us</h2>
-                </div>
-                <div className='flex justify-around'>
-                    <Image 
-                    alt='brands'
-                    src={Logo1}/>
-                    <Image 
-                    alt='brands'
-                    src={Logo1}/>
-                    <Image 
-                    alt='brands'
-                    src={Logo1}/>
-                    <Image 
-                    alt='brands'
-                    src={Logo1}/>
-                </div>
-            </div>
+            <Brands />
             <div className='cta bg-pureWhite py-9'>
                 <div>
                     <h2 className='text-[30px] text-center font-semibold'>What our customers are saying</h2>
@@ -234,20 +219,8 @@ const Index: NextPage = () => {
                     <div className='bg-primaryBlue w-2 h-2 rounded-full ml-1'></div>
                </div>
             </div>
-            <div className='flex justify-center'>
-                <div className='w-[70%] my-9'>
-                    <div>
-                        <span className='block text-[64px] text-center'>Join Databoard to enjoy our 14-day Free trial</span>
-                    </div>
-                    <div className='flex gap-3 justify-center mt-9'>
-                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px] bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
-                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>Log In</span></a>
-                    </div>
-                </div>
-            </div>
-            <div className='footer flex h-[300px] bg-[#010A26]'>
-                <span className='block m-auto text-pureWhite'>footer</span>
-            </div>
+            <Join/>
+            <Footer />
         </>
     )
   }
