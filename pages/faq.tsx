@@ -19,32 +19,30 @@ const Faq: NextPage = () => {
     const showAnswer = (question, e)=>{
         let answers = document.getElementsByClassName('answer')
 
-        console.log(show, showing)
-        if (show===true && showing===false) {
-            document.getElementById(question).hidden = true;
-            e.target.classList.add('border-y-0')
-            e.target.classList.remove('border-b-1')
-            setShow(false)
-        }else if(show===true && showing===true){
-            for (let i = 0; i < answers.length; i++) {
-                const elemet = answers[i];        
-                if (elemet.hidden === false) {
-                    elemet.hidden = true
-                    e.target.classList.add('border-y-0')
-                    e.target.classList.remove('border-b-1')
-                    setShowing(false)   
-                    setShow(false)
-                }     
-            }
-        }else{
+        if (document.getElementById(question).hidden) {
             document.getElementById(question).hidden = false;
             e.target.classList.remove('border-y-0')
             e.target.classList.add('border-b-1')
-            // e.target.children[1].src = Dropup
-            setShow(true)
-            setShowing(true)
+        }else{
+            document.getElementById(question).hidden = true;
+            e.target.classList.add('border-y-0')
+            e.target.classList.remove('border-b-1')
         }
+        // if (show===true) {
+        //     document.getElementById(question).hidden = true;
+        //     e.target.classList.add('border-y-0')
+        //     e.target.classList.remove('border-b-1')
+        //     setShow(false)
+        // }else{
+        //     document.getElementById(question).hidden = false;
+        //     e.target.classList.remove('border-y-0')
+        //     e.target.classList.add('border-b-1')
+        //     // e.target.children[1].src = Dropup
+        //     setShow(true)
+        //     setShowing(true)
+        // }
     }
+
     return(
         <>
             <Navbar active='resources'/>
