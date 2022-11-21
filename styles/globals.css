@@ -5,3 +5,15 @@
 .nav .active{
     @apply text-primaryBlue
 }
+
+.price-btn{
+    @apply text-primaryBlue
+    p-2
+    px-6
+}
+
+.price-btn.active{
+    @apply text-pureWhite
+    bg-primaryBlue
+    rounded-sm
+}

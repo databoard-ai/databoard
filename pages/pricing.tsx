@@ -2,17 +2,7 @@ import type { NextPage } from 'next'
 import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
 const Logo1 = require('../public/assets/logo-home.png')
-const Banner1 = require('../public/assets/banner-home.png')
-const Iphone = require('../public/assets/iphone.png')
-const Ellipses = require('../public/assets/ellipses.png')
-const Playstore = require('../public/assets/playstore.png')
-const Appstore = require('../public/assets/applestore.png')
-const Cta2 = require('../public/assets/cta2-img.png')
-const PhoneIco = require('../public/assets/phone-ico.png')
-const Security = require('../public/assets/Privacy.png')
-const Visual = require('../public/assets/Visual.png')
-const Connected = require('../public/assets/Connected.png')
-const Avatar = require('../public/assets/avatar.png')
+const Checkblue = require('../public/assets/check-square-blue.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import { connected } from 'process'
@@ -20,9 +10,192 @@ import Join from '../components/HomePages/Join'
 import Brands from '../components/HomePages/Brands'
 
 const Pricing: NextPage = () => {
+    const changeDuration = (e) => {
+        let btns = document.getElementsByClassName('price-btn')
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].classList.remove('active');
+            
+        }
+        e.target.classList.add('active')
+    }
     return(
         <>
             <Navbar active='pricing'/>
+            <div className='mt-12'>
+                <span className='block text-center text-[24px] text-primaryBlue font-semibold'>Our Pricing</span>
+                <span className='block text-center text-[40px] font-semibold mt-8'>Choose the 
+                <span className='text-primaryBlue'> Plan</span> that suits your Organization</span>
+                <span className='block text-center text-[20px]'>Databoard fits perfectly for organizations big and small. <br/>Regardless of your budget</span>
+                <div className='flex justify-center mt-12'>
+                    <div className='border border-primaryBlue rounded-sm p-1'>
+                        <button className='price-btn active' onClick={(e)=>changeDuration(e)}>Monthly</button>
+                        <button className='price-btn ml-2' onClick={(e)=>changeDuration(e)}>Yearly</button>
+                    </div>
+                </div>
+                <span className='block text-center mt-2 text-[20px]'>Enjoy a 10 % discount on any annual subscription</span>
+            </div>
+            <div className='flex justify-around mt-12 mx-12'>
+                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                    <div className=''>
+                        <span className='block text-center text-primaryBlue'>Free plan</span>
+                        <span className='block text-center font-bold text-[40px] mt-5'>$0/mo</span>
+                    </div>
+                    <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
+                    <div className=''>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>What you get</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Access to Analytics</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>4 tags/ Month</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>One Filter permit</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Up to 50 clocks</span>
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                    </div>
+                </div>
+                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                    <div className=''>
+                        <span className='block text-center text-primaryBlue'>Free plan</span>
+                        <span className='block text-center font-bold text-[40px] mt-5'>$0/mo</span>
+                    </div>
+                    <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
+                    <div className=''>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>What you get</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Access to Analytics</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>4 tags/ Month</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>One Filter permit</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Up to 50 clocks</span>
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                    </div>
+                </div>
+                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                    <div className=''>
+                        <span className='block text-center text-primaryBlue'>Free plan</span>
+                        <span className='block text-center font-bold text-[40px] mt-5'>$0/mo</span>
+                    </div>
+                    <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
+                    <div className=''>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>What you get</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Access to Analytics</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>4 tags/ Month</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>One Filter permit</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Up to 50 clocks</span>
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                    </div>
+                </div>
+                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                    <div className=''>
+                        <span className='block text-center text-primaryBlue'>Free plan</span>
+                        <span className='block text-center font-bold text-[40px] mt-5'>$0/mo</span>
+                    </div>
+                    <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
+                    <div className=''>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>What you get</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Access to Analytics</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>4 tags/ Month</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>One Filter permit</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Up to 50 clocks</span>
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                    </div>
+                </div>
+                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                    <div className=''>
+                        <span className='block text-center text-primaryBlue'>Free plan</span>
+                        <span className='block text-center font-bold text-[40px] mt-5'>$0/mo</span>
+                    </div>
+                    <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
+                    <div className=''>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>What you get</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Access to Analytics</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>4 tags/ Month</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>One Filter permit</span>
+                        </div>
+                        <div className='flex items-center my-3'>
+                            <Image className='w-[20px]' alt='check' src={Checkblue} />
+                            <span className='ml-4 text-[15px]'>Up to 50 clocks</span>
+                        </div>
+                    </div>
+                    <div className='mt-5'>
+                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                    </div>
+                </div>
+            </div>
             <Brands/>
             <Join/>
             <Footer />

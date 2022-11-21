@@ -88,10 +88,10 @@ const Home: NextPage = () => {
       {/* <Setup/> */}
       {/* <CreateTag/> */}
       {/* <Index/> */}
-      {/* <Pricing/> */}
+      <Pricing/>
       {/* <About/> */}
       {/* <Blogs/> */}
-      <Faq/>
+      {/* <Faq/> */}
     </div>
   )
 }
