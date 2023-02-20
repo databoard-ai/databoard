@@ -6,12 +6,11 @@ const Blog2 = require('../public/assets/blog2.png')
 const Blog3 = require('../public/assets/blog3.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
-import { connected } from 'process'
 
 const Blogs: NextPage = () => {
     return(
         <>
-            <Navbar active='resources'/>
+            <Navbar/>
             <div className='blogs px-12 my-12'>
                 <div className='header'>
                     <span className='block text-[50px] text-primaryBlue font-semibold'>Stay updated</span>

@@ -49,7 +49,7 @@ const Pricing: NextPage = () => {
     })
     return(
         <>
-            <Navbar active='pricing'/>
+            <Navbar/>
             <div className='mt-12'>
                 <span className='block text-center text-[24px] text-primaryBlue font-semibold'>Our Pricing</span>
                 <span className='block text-center text-[40px] font-semibold mt-8'>Choose the 

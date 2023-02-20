@@ -6,14 +6,13 @@ const Banner1 = require('../public/assets/banner-home.png')
 const Team = require('../public/assets/team.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
-import { connected } from 'process'
 import Join from '../components/HomePages/Join'
 import Brands from '../components/HomePages/Brands'
 
 const About: NextPage = () => {
     return(
         <>
-            <Navbar active='about'/>
+            <Navbar/>
             <div className='mt-12'>
                 <div className='flex justify-center'> 
                     <span className='block text-[60px] font-semibold text-center w-[70%]'>We are on a mission to bring you on board with data</span>

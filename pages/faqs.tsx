@@ -32,7 +32,7 @@ const Faq: NextPage = () => {
 
     return(
         <>
-            <Navbar active='resources'/>
+            <Navbar/>
             <div className='faq px-[10%] my-12'>
                 <div className='header'>
                     <span className='block text-[50px] text-primaryBlue font-semibold'>Frequently Asked Questions</span>

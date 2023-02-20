@@ -17,12 +17,11 @@ import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import Join from '../components/HomePages/Join'
 import Brands from '../components/HomePages/Brands'
-import { connected } from 'process'
 
 const Index: NextPage = () => {
     return(
         <>
-            <Navbar active='home'/>
+            <Navbar/>
             <div className='banner'>
                 <div className='banner-content absolute top-[25%] left-[0%] z-[1] text-center'>
                     <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering you in<br/> a <span className='text-primaryBlue'>Data-driven</span> world</span>
