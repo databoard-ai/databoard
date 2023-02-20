@@ -24,19 +24,20 @@ const Index: NextPage = () => {
         <>
             <Navbar active='home'/>
             <div className='banner'>
-                <div className='banner-content absolute top-[35%] left-[25%] text-center'>
-                    <span className='block text-[64px] font-semibold text-pureWhite'>Empowering you in a <br/><span className='text-primaryBlue'>Data-driven</span> world</span>
-                    <span className='block text-[18px] text-pureWhite'>Optimise performance and establish peak efficiency with Databoard. 
+                <div className='banner-content absolute top-[25%] left-[0%] z-[1] text-center'>
+                    <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering you in<br/> a <span className='text-primaryBlue'>Data-driven</span> world</span>
+                    <span className='block text-[16px] text-pureWhite'>Optimise performance and establish peak efficiency with Databoard. 
                         <br/>Let us help you get more out of your visitors without breaching privacy
                     </span>
                     <br />
                     <div>
-                        <input className='w-[350px] h-[50px] pl-5' type="text" name="" id="" placeholder='Enter email for a 14 day enterprise trial'/>
+                        <input className='w-[270px] mb-2 text-[14px] lg:w-[350px] h-[50px] pl-4' type="text" name="" id="" placeholder='Enter email for a 14 day enterprise trial'/>
                         <button className='bg-primaryBlue h-[50px] w-[150px] text-pureWhite rounded-r-sm'>Get started</button>
                     </div>
                 </div>
+                <div className='absolute z-[0] top-[90px] left-0 h-[450px] w-[100%] bg-gradient-to-t from-[#121212] to-[rgba(1, 10, 38, 0.9)]'></div>
                 <Image
-                className='h-[670px]'
+                className='h-[450px] lg:h-[670px]'
                 alt='banner'
                 src={Banner1}
                 />
