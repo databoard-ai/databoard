@@ -17,9 +17,10 @@ const Blogs: NextPage = () => {
                     <span className='block text-[16px] lg:text-[18px]'>Increase your Organzation’s productivity with more info on data</span>
                 </div>
                 <div className='content mt-12 grid xsm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-12'>
-                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm'>
-                        <div className=''>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
                             <Image 
+                            className='img-transform'
                             alt='team'
                             src={Blog1}/>
                         </div>
@@ -32,9 +33,10 @@ const Blogs: NextPage = () => {
                             <span className='block text-[#838282] text-[13px] mt-2'>October 13, 2022</span>
                         </div>
                     </div>
-                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm'>
-                        <div className=''>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
                             <Image 
+                            className='img-transform'
                             alt='team'
                             src={Blog2}/>
                         </div>
@@ -47,54 +49,10 @@ const Blogs: NextPage = () => {
                             <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
                         </div>
                     </div>
-                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm'>
-                        <div className=''>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
                             <Image 
-                            alt='team'
-                            src={Blog3}/>
-                        </div>
-                        <div className='mt-5 px-2'>
-                            <div className='flex'>
-                                <span className='text-[#838282] text-[16px]'>Data</span>
-                                <span className='text-[#838282] text-[16px] ml-5'>Monitoring</span>
-                            </div>
-                            <span className='block text-[18px] font-semibold mt-5'>fully understanding the category of individuls that visit your faacility with clocker</span>
-                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
-                        </div>
-                    </div>
-                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm'>
-                        <div className=''>
-                            <Image 
-                            alt='team'
-                            src={Blog2}/>
-                        </div>
-                        <div className='mt-5 px-2'>
-                            <div className='flex'>
-                                <span className='text-[#838282] text-[16px]'>User</span>
-                                <span className='text-[#838282] text-[16px] ml-5'>Data</span>
-                            </div>
-                            <span className='block text-[18px] font-semibold mt-5'>Using clocker  to optimize data tracking</span>
-                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
-                        </div>
-                    </div>
-                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm'>
-                        <div className=''>
-                            <Image 
-                            alt='team'
-                            src={Blog3}/>
-                        </div>
-                        <div className='mt-5 px-2'>
-                            <div className='flex'>
-                                <span className='text-[#838282] text-[16px]'>Data</span>
-                                <span className='text-[#838282] text-[16px] ml-5'>Monitoring</span>
-                            </div>
-                            <span className='block text-[18px] font-semibold mt-5'>fully understanding the category of individuls that visit your faacility with clocker</span>
-                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
-                        </div>
-                    </div>
-                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm'>
-                        <div className=''>
-                            <Image 
+                            className='img-transform'
                             alt='team'
                             src={Blog1}/>
                         </div>
@@ -105,11 +63,123 @@ const Blogs: NextPage = () => {
                             </div>
                             <span className='block text-[18px] font-semibold mt-5'>Ensuring data privacy for small startups</span>
                             <span className='block text-[#838282] text-[13px] mt-2'>October 13, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog2}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>User</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Data</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Using clocker  to optimize data tracking</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog1}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>Security</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Privacy</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Ensuring data privacy for small startups</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 13, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog2}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>User</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Data</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Using clocker  to optimize data tracking</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog1}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>Security</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Privacy</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Ensuring data privacy for small startups</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 13, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog2}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>User</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Data</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Using clocker  to optimize data tracking</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog1}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>Security</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Privacy</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Ensuring data privacy for small startups</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 13, 2022</span>
+                        </div>
+                    </div>
+                    <div className='blog-item ring-1 ring-[#C3C3C3] rounded-sm cursor-pointer'>
+                        <div className='overflow-hidden'>
+                            <Image 
+                            className='img-transform'
+                            alt='team'
+                            src={Blog2}/>
+                        </div>
+                        <div className='mt-5 px-2'>
+                            <div className='flex'>
+                                <span className='text-[#838282] text-[16px]'>User</span>
+                                <span className='text-[#838282] text-[16px] ml-5'>Data</span>
+                            </div>
+                            <span className='block text-[18px] font-semibold mt-5'>Using clocker  to optimize data tracking</span>
+                            <span className='block text-[#838282] text-[13px] mt-2'>October 14, 2022</span>
                         </div>
                     </div>
                 </div>
                 <div className='flex justify-center mt-12'>
-                    <button className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>View More</span></button>
+                    <button className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>View More</span></button>
                 </div>
             </div>
             <Footer />

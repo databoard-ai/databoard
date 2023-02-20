@@ -35,9 +35,9 @@ function Navbar() {
                 </Link>
             </div>
             <div className='hidden lg:flex'>
-                <Link id="home" href="/" className={location.pathname=="/"?'mx-[15px] active':'mx-[15px]'}>Home</Link>
-                <Link id="board" href="#" className='mx-[15px]'>Board</Link>
-                <Link id="pricing" href="/pricing" className={location.pathname=="/pricing"?'mx-[15px] active':'mx-[15px]'}>Pricing</Link>
+                <Link id="home" href="/" className={location.pathname=="/"?'mx-[15px] active':'mx-[15px] hover:text-primaryBlue'}>Home</Link>
+                <Link id="board" href="#" className='mx-[15px] hover:text-primaryBlue'>Board</Link>
+                <Link id="pricing" href="/pricing" className={location.pathname=="/pricing"?'mx-[15px] active':'mx-[15px] hover:text-primaryBlue'}>Pricing</Link>
                 <div className="overflow-hidden">
                     <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center hover:text-primaryBlue cursor-pointer active":"flex items-center hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
                         <span className="mr-1 block">Resources</span>
@@ -59,11 +59,11 @@ function Navbar() {
                         </ul>
                     </div>
                 </div>
-                <Link id="about" href="/about" className={location.pathname=="/about"?'mx-[15px] active':'mx-[15px]'}>About Us</Link>
+                <Link id="about" href="/about" className={location.pathname=="/about"?'mx-[15px] active':'mx-[15px] hover:text-primaryBlue'}>About Us</Link>
             </div>
             <div className='hidden lg:flex gap-x-3'>
-                <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>Log In</span></a>
-                <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px] bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
+                <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>Log In</span></a>
+                <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px] bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
             </div>
             <div className={showSideMenu?"hidden lg:hidden":"flex cursor-pointer lg:hidden"} onClick={showSmenu}>
                 <FiMenu size={30}/>
@@ -72,7 +72,7 @@ function Navbar() {
                 <GrClose size={30}/>
             </div>
         </div>
-        <div id="side-nav" className={showSideMenu?"nav fixed top-0 left-[0px] w-[250px] h-full z-[1000] bg-defaultBackground overflow-scroll transition ease-in-out duration-700":"fixed top-0 left-[-250px] w-[250px] h-full z-[1000] bg-defaultBackground transition duration-700 ease-in-out"}>
+        <div id="side-nav" className={showSideMenu?"nav fixed top-0 left-[0px] w-[250px] h-full z-[1000] bg-defaultBackground overflow-scroll ease-in-out duration-700":"fixed top-0 left-[-250px] w-[250px] h-full z-[1000] bg-defaultBackground duration-700 ease-in-out"}>
             <div className='mt-7 mb-8'>
                 <Link href='/'>
                     <Image
@@ -117,8 +117,8 @@ function Navbar() {
                 </li>
             </ul>
             <div className='m-auto mb-5'>
-                <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto mb-2'><span className='block m-auto text-primaryBlue'>Log In</span></a>
-                <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
+                <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto mb-2'><span className='block m-auto text-primaryBlue'>Log In</span></a>
+                <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
             </div>
         </div>
         </>

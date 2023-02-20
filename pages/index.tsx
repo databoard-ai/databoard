@@ -67,11 +67,11 @@ const Index: NextPage = () => {
                     </span>
                     <div className='flex justify-center xsm:justify-start'>
                         <Image 
-                        className='inline'
+                        className='btn inline'
                         alt='playstore'
                         src={Playstore}/>
                         <Image 
-                        className='inline'
+                        className='btn inline'
                         alt='applestore'
                         src={Appstore}/>
                     </div>
@@ -91,7 +91,7 @@ const Index: NextPage = () => {
                     </span>
                     <span className='block text-[15px] mb-5'>We will love to help you optimize performance and establish peak efficiency with Databoard.  Let us help you get more out of your visitors without breaking privacy.</span>
                     <div className='flex gap-2 justify-center sm:justify-start'>
-                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px] px-1 bg-primaryBlue'>
+                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px] px-1 bg-primaryBlue'>
                             <span className='m-auto text-pureWhite'>
                             <Image
                             className='inline mr-1'
@@ -100,7 +100,7 @@ const Index: NextPage = () => {
                             Call Sales
                             </span>
                         </a>
-                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
+                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
                     </div>
                 </div>
                 <div className='mt-5 mb-3'>

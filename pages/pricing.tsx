@@ -92,7 +92,7 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2'>
@@ -123,7 +123,7 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
                     </div>
                 </div>
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
@@ -154,7 +154,7 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2 bg-primaryBlue'>
@@ -185,7 +185,7 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
                     </div>
                 </div>
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
@@ -216,7 +216,7 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
             </div>
