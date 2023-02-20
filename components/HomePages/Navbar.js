@@ -25,7 +25,7 @@ function Navbar() {
 
     return (
         <>
-        <div className='nav z-20 bg-[#F4F4F4] h-[90px] flex items-center justify-between sticky top-0 px-[5px] md:px-[50px]'>
+        <div className='font-montserrat nav z-20 bg-[#F4F4F4] h-[90px] flex items-center justify-between sticky inset-x-0 top-0 px-[5px] md:px-[50px]'>
             <div className=''>
                 <Link href='/'>
                     <Image
