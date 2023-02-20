@@ -41,8 +41,8 @@ const Index: NextPage = () => {
                 src={Banner1}
                 />
             </div>
-            <div className='cta grid grid-cols-2'>
-                <div className='mt-[90px] mb-[49.5px] ml-[20px]'>
+            <div className='cta grid xsm:grid-cols-2 overflow-hidden'>
+                <div className='hidden xsm:block mt-[90px] mb-[49.5px] ml-[20px]'>
                     <Image 
                     className='float-left w-[400px] mb-[-250px]'
                     alt='ellipse'
@@ -58,14 +58,14 @@ const Index: NextPage = () => {
                     alt='ellipse'
                     src={Ellipses}/>
                 </div>
-                <div className='mt-[140px] ml-[20px]'>
-                    <span className='block text-[64px] text-primaryBlue font-semibold'>Meet clocker</span>
-                    <span className='block text-[24px] text-black'>The easist way to create a digital footprint.</span>
-                    <span className='block text-[16px]'>Clocker helps users to check into Access points, Events, and locations in Seconds.
+                <div className='mt-5 xsm:mt-[80px] md:mt-[140px] xsm:ml-[20px]'>
+                    <span className='block text-[40px] text-center xsm:text-left xsm:text-[40px] md:text-[64px] text-primaryBlue font-semibold'>Meet clocker</span>
+                    <span className='block text-[18px] text-center xsm:text-left font-bold xsm:text-[24px] text-black mb-2'>The easist way to create a digital footprint.</span>
+                    <span className='block text-[16px] text-center xsm:text-left'>Clocker helps users to check into Access points, Events, and locations in Seconds.
                         <br />
                         Databoard works hand in hand with cloker, to drive efficieny with data. 
                     </span>
-                    <div>
+                    <div className='flex justify-center xsm:justify-start'>
                         <Image 
                         className='inline'
                         alt='playstore'
@@ -76,17 +76,22 @@ const Index: NextPage = () => {
                         src={Appstore}/>
                     </div>
                 </div>
+                <div className='mt-5 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden'>
+                    <Image 
+                    className='w-[200px] xsm:w-[350px] m-auto'
+                    alt='phone'
+                    src={Iphone}/>
+                </div>
             </div>
-            <div className='cta grid grid-cols-2 justify-center bg-[#F4F4F4]'>
-                <div className='pl-[20%]'>
-                    <span className='block text-[50px] text-primaryBlue font-semibold mt-[100px]'>Contact Us  About 
+            <div className='cta grid sm:grid-cols-2 justify-center bg-[#F4F4F4] overflow-hidden'>
+                <div className='px-2 text-center sm:text-left md:pl-[20%]'>
+                    <span className='block text-[32px] lg:text-[40px] text-primaryBlue font-semibold mt-5 mb-2 lg:mt-[100px]'>Contact Us About 
                         <br />
                         Databoard Software
                     </span>
-                    <span className='block text-[15px]'>We will love to help you optimize performance and establish peak efficiency with Databoard.  Let us help you get more out of your visitors without breaking privacy.</span>
-                    <br />
-                    <div className='flex gap-2'>
-                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-auto px-1 bg-primaryBlue'>
+                    <span className='block text-[15px] mb-5'>We will love to help you optimize performance and establish peak efficiency with Databoard.  Let us help you get more out of your visitors without breaking privacy.</span>
+                    <div className='flex gap-2 justify-center sm:justify-start'>
+                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px] px-1 bg-primaryBlue'>
                             <span className='m-auto text-pureWhite'>
                             <Image
                             className='inline mr-1'
@@ -95,50 +100,49 @@ const Index: NextPage = () => {
                             Call Sales
                             </span>
                         </a>
-                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
+                        <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
                     </div>
                 </div>
-                <div>
-                    <div className='w-[50px] h-[50px] border-4 border-primaryBlue rounded-full relative top-[30px] left-[475px]'></div>
+                <div className='mt-5 mb-3'>
                     <Image
-                    className='w-[500px]'
+                    className='w-[400px] xsm:w-[500px] m-auto'
                     alt='cta2'
                     src={Cta2}/>
-                    <div className='w-[50px] h-[50px] border-4 border-primaryBlue rounded-full relative bottom-[30px] left-[-20px]'></div>
                 </div>
             </div>
-            <div className='cta bg-primaryBlue px-10'>
-                <div className='flex justify-around'>
-                    <div>
-                        <span className='block text-[40px] font-semibold text-pureWhite mt-32'>Privacy-focused <br/>Data acquisitor</span>
-                        <br />
-                        <span className='block text-pureWhite text-[16px]'>We focus on the data security of our users and <br/>priotizie thier privacy before anything else</span>
+            <div className='cta bg-primaryBlue px-10 text-center overflow-hidden'>
+                <div className='grid sm:grid-cols-2 lg:flex justify-around'>
+                    <div className=''>
+                        <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Privacy-focused Data acquisitor</span>
+                        <span className='block text-pureWhite xsm:text-[16px]'>We focus on the data security of our users and priotizie thier privacy before anything else</span>
                     </div>
                     <div>
                         <Image
-                        className='w-[400px]' 
+                        className='w-[400px] m-auto' 
                         alt='secure'
                         src={Security}/>
                     </div>
                 </div>
-                <div className='flex justify-around'>
+                <div className='grid sm:grid-cols-2 lg:flex justify-around'>
+                    <div className='sm:hidden'>
+                        <span className='block text-[24px] sm:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-32 mb-5'>Insights and Reporting</span>
+                        <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br/>perfromance optimization</span>
+                    </div>
                     <div>
                         <Image
                         className='w-[400px]' 
                         alt='visual'
                         src={Visual}/>
                     </div>
-                    <div>
-                        <span className='block text-[40px] font-semibold text-pureWhite mt-32'>Insights and <br/>Reporting</span>
-                        <br />
+                    <div className='hidden sm:block'>
+                        <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Insights and <br/>Reporting</span>
                         <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br/>perfromance optimization</span>
                     </div>
                 </div>
-                <div className='flex justify-around'>
+                <div className='grid sm:grid-cols-2 lg:flex justify-around'>
                     <div>
-                        <span className='block text-[40px] font-semibold text-pureWhite mt-32'>Communication tool</span>
-                        <br />
-                        <span className='block text-pureWhite text-[16px]'>Target and Engage your Databoard <br />audience with our communication tools.</span>
+                        <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Communication tool</span>
+                        <span className='block text-pureWhite xsm:text-[16px]'>Target and Engage your Databoard <br />audience with our communication tools.</span>
                     </div>
                     <div>
                         <Image
@@ -148,8 +152,8 @@ const Index: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <Brands />
-            <div className='cta bg-pureWhite py-9'>
+            {/* <Brands /> */}
+            {/* <div className='cta bg-pureWhite py-9'>
                 <div>
                     <h2 className='text-[30px] text-center font-semibold'>What our customers are saying</h2>
                 </div>
@@ -218,7 +222,7 @@ const Index: NextPage = () => {
                     <div className='bg-primaryBlue w-2 h-2 rounded-full ml-1'></div>
                     <div className='bg-primaryBlue w-2 h-2 rounded-full ml-1'></div>
                </div>
-            </div>
+            </div> */}
             <Join/>
             <Footer />
         </>

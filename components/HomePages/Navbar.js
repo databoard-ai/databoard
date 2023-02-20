@@ -112,6 +112,9 @@ function Navbar() {
                         </ul>
                     </div>
                 </li>
+                <li className="mb-5 hover:text-primaryBlue">
+                    <Link href="/about" className={location.pathname=='/about'?"block active":'block'}>About Us</Link>
+                </li>
             </ul>
             <div className='m-auto'>
                 <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto mb-2'><span className='block m-auto text-primaryBlue'>Log In</span></a>
