@@ -63,8 +63,8 @@ const Pricing: NextPage = () => {
                 </div>
                 <span className='block text-center mt-2 text-[20px]'>Enjoy a 10 % discount on any annual subscription</span>
             </div>
-            <div className='flex justify-around my-12 mx-12'>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:justify-around my-12'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Free plan</span>
                         <span className='block text-center font-bold text-[40px] mt-5 price'>$0/mo</span>
@@ -95,7 +95,7 @@ const Pricing: NextPage = () => {
                         <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-pureWhite'>Free plan</span>
                         <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$20/mo</span>
@@ -126,7 +126,7 @@ const Pricing: NextPage = () => {
                         <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Standard plan</span>
                         <span className='block text-center font-bold text-[40px] mt-5 price'>$35/mo</span>
@@ -157,7 +157,7 @@ const Pricing: NextPage = () => {
                         <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2 bg-primaryBlue'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2 bg-primaryBlue'>
                     <div className=''>
                         <span className='block text-center text-pureWhite'>Free plan</span>
                         <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$50/mo</span>
@@ -188,7 +188,7 @@ const Pricing: NextPage = () => {
                         <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Enterprise plan</span>
                         <span className='block text-center font-bold text-[40px] mt-5 price'>$100/mo</span>
@@ -220,7 +220,7 @@ const Pricing: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <Brands/>
+            {/* <Brands/> */}
             <Join/>
             <Footer />
         </>
