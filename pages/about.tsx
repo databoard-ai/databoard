@@ -3,7 +3,11 @@ import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
 const Logo1 = require('../public/assets/logo-home.png')
 const Banner1 = require('../public/assets/banner-home.png')
-const Team = require('../public/assets/team.png')
+const James = require('../public/assets/images/team/james.png')
+const Seyi = require('../public/assets/images/team/seyi.jpeg')
+const Isy = require('../public/assets/images/team/isy.png')
+const Team = require('../public/assets/images/team/team.png')
+const Michael = require('../public/assets/images/team/michael.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import Join from '../components/HomePages/Join'
@@ -19,11 +23,15 @@ const About: NextPage = () => {
                 </div>
                 <br />
                 <div className='flex justify-center'> 
-                    <span className='block text-[18px] lg:text-[20px] text-center w-[80%]'>At Databoard , we belive that attaining  dat is the first step  towrds becoming  data-driven. If data can be successfully acquired, processed and interpretedn, it can drive up the efficinecny of any system.</span>
+                    <span className='block text-[18px] lg:text-[20px] text-center w-[80%]'>At Databoard , we believe that attaining  data is the first step towards becoming  data-driven. If data can be successfully acquired, processed and interpreted, it can drive up the efficiency of any system</span>
                 </div>
                 <br />
                 <div className='flex justify-center'> 
-                    <span className='block text-[20px] text-center w-[90%]'>Suspendisse ac tellus etiam eu. Dolor scelerisque justo aenean venenatis sit sed turpis turpis sagittis. Donec augue pellentesque at malesuada risus in. Adipiscing viverra neque neque lacus mattis ligula at. Nam commodo cursus consequat luctus. Felis id urna euismod dapibus lacus orci risus. Morbi egestas nec nulla tellus magna. Sagittis lectus velit nisi lacus lacus molestie tellus ullamcorper pellentesque.</span>
+                    <span className='block text-[20px] text-center w-[90%]'>Databoard, an African startup, aims to revolutionize the way African organizations connect with their audiences through the use of data technology. Our goal is to become the leading provider of data technology solutions that enable African organizations to make data-driven decisions.</span>
+                </div>
+                <br />
+                <div className='flex justify-center'> 
+                    <span className='block text-[20px] text-center w-[90%]'>Our value proposition is to provide African organizations with the tools to collect, sort, and analyze their users' data to provide actionable insights for efficient management and communication. Our data technology transforms the way organizations interact with their audiences, leading to improved customer satisfaction, increased engagement, and business growth.</span>
                 </div>
             </div>
             <div className='team px-3 md:px-12 my-12'>
@@ -36,11 +44,33 @@ const About: NextPage = () => {
                         <div>
                             <Image 
                             alt='team'
-                            src={Team}/>
+                            src={James}/>
                         </div>
                         <div className='mt-5'>
-                            <span className='block text-[18px] font-semibold'>Name of individual</span>
-                            <span className='block text-[15px]'>Role in organization</span>
+                            <span className='block text-[18px] font-semibold'>James Onuh</span>
+                            <span className='block text-[15px]'>Design & Marketing</span>
+                        </div>
+                    </div>
+                    <div className='team-item m-auto'>
+                        <div className='bg-primaryBlue'>
+                            <Image 
+                            alt='team'
+                            src={Seyi}/>
+                        </div>
+                        <div className='mt-5'>
+                            <span className='block text-[18px] font-semibold'>Ogundipe Oluseyi</span>
+                            <span className='block text-[15px]'>Product & Design</span>
+                        </div>
+                    </div>
+                    <div className='team-item m-auto'>
+                        <div className='bg-primaryBlue'>
+                            <Image 
+                            alt='team'
+                            src={Isy}/>
+                        </div>
+                        <div className='mt-5'>
+                            <span className='block text-[18px] font-semibold'>Agom Israel</span>
+                            <span className='block text-[15px]'>Business</span>
                         </div>
                     </div>
                     <div className='team-item m-auto'>
@@ -50,41 +80,19 @@ const About: NextPage = () => {
                             src={Team}/>
                         </div>
                         <div className='mt-5'>
-                            <span className='block text-[18px] font-semibold'>Name of individual</span>
-                            <span className='block text-[15px]'>Role in organization</span>
+                            <span className='block text-[18px] font-semibold'>Jilang Duna</span>
+                            <span className='block text-[15px]'>Engineering</span>
                         </div>
                     </div>
                     <div className='team-item m-auto'>
                         <div className='bg-primaryBlue'>
                             <Image 
                             alt='team'
-                            src={Team}/>
+                            src={Michael}/>
                         </div>
                         <div className='mt-5'>
-                            <span className='block text-[18px] font-semibold'>Name of individual</span>
-                            <span className='block text-[15px]'>Role in organization</span>
-                        </div>
-                    </div>
-                    <div className='team-item m-auto'>
-                        <div className='bg-primaryBlue'>
-                            <Image 
-                            alt='team'
-                            src={Team}/>
-                        </div>
-                        <div className='mt-5'>
-                            <span className='block text-[18px] font-semibold'>Name of individual</span>
-                            <span className='block text-[15px]'>Role in organization</span>
-                        </div>
-                    </div>
-                    <div className='team-item m-auto'>
-                        <div className='bg-primaryBlue'>
-                            <Image 
-                            alt='team'
-                            src={Team}/>
-                        </div>
-                        <div className='mt-5'>
-                            <span className='block text-[18px] font-semibold'>Name of individual</span>
-                            <span className='block text-[15px]'>Role in organization</span>
+                            <span className='block text-[18px] font-semibold'>Agom Michael</span>
+                            <span className='block text-[15px]'>Content Marketing</span>
                         </div>
                     </div>
                 </div>

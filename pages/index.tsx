@@ -25,9 +25,9 @@ const Index: NextPage = () => {
             <Navbar/>
             <div className='banner'>
                 <div className='banner-content absolute top-[25%] md:top-[35%] m-auto z-[1] text-center w-full'>                    
-                  <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering you in<br/> a <span className='text-primaryBlue'>Data-driven</span> world</span>
-                    <span className='block text-[16px] text-pureWhite mb-7'>Optimise performance and establish peak efficiency with Databoard. 
-                        <br/>Let us help you get more out of your visitors without breaching privacy
+                  <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering You in<br/> a <span className='text-primaryBlue'>data-driven</span> world</span>
+                    <span className='block text-[16px] text-pureWhite mb-7'>Acquire Data, Discover significant insights, Optimize performance.
+                        <br/>Let us help you get more out of your audience without breaching privacy.
                     </span>
                     <div>
                         <input className='w-[270px] mb-2 text-[14px] lg:text-[16px] lg:w-[350px] h-[50px] pl-4' type="text" name="" id="" placeholder='Enter email for a 14 day enterprise trial'/>
@@ -60,8 +60,8 @@ const Index: NextPage = () => {
                 </div>
                 <div className='mt-5 xsm:mt-[80px] md:mt-[140px] xsm:ml-[20px]'>
                     <span className='block text-[40px] text-center xsm:text-left xsm:text-[40px] md:text-[64px] text-primaryBlue font-semibold'>Meet clocker</span>
-                    <span className='block text-[18px] text-center xsm:text-left font-bold xsm:text-[24px] text-black mb-2'>The easist way to create a digital footprint.</span>
-                    <span className='block text-[16px] text-center xsm:text-left'>Clocker helps users to check into Access points, Events, and locations in Seconds.
+                    <span className='block text-[18px] text-center xsm:text-left font-bold xsm:text-[24px] text-black mb-2'>Register your presence with Clocker</span>
+                    <span className='block text-[16px] text-center xsm:text-left'>Clocker helps users to check into locations, events or any access point in seconds, by scanning Databoard access tags.
                         <br />
                         Databoard works hand in hand with cloker, to drive efficieny with data. 
                     </span>
@@ -89,7 +89,7 @@ const Index: NextPage = () => {
                         <br />
                         Databoard Software
                     </span>
-                    <span className='block text-[15px] mb-5'>We will love to help you optimize performance and establish peak efficiency with Databoard.  Let us help you get more out of your visitors without breaking privacy.</span>
+                    <span className='block text-[15px] mb-5'>We will love to help you acquire your user audience with ease, and also help you unlock hidden trends beneath their clocking-in data. Optimize performance and establish peak efficiency with Databoard. Here are a few ways to reach out to our sales team.</span>
                     <div className='flex gap-2 justify-center sm:justify-start'>
                         <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px] px-1 bg-primaryBlue'>
                             <span className='m-auto text-pureWhite'>
@@ -97,7 +97,7 @@ const Index: NextPage = () => {
                             className='inline mr-1'
                             alt='ico'
                             src={PhoneIco}/>
-                            Call Sales
+                            Contact Sales
                             </span>
                         </a>
                         <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
@@ -136,7 +136,7 @@ const Index: NextPage = () => {
                     </div>
                     <div className='hidden sm:block'>
                         <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Insights and <br/>Reporting</span>
-                        <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br/>perfromance optimization</span>
+                        <span className='block text-pureWhite text-[16px]'>Generate insights from data, for <br/>perfromance optimization</span>
                     </div>
                 </div>
                 <div className='grid sm:grid-cols-2 lg:flex justify-around'>

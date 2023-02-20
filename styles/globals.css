@@ -28,6 +28,6 @@
 }
 
 .blog-item:hover .img-transform{
-    transform: scale(1.5);
+    transform: scale(1.1);
     @apply transition ease-in-out duration-700
 }

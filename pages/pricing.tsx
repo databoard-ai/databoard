@@ -14,8 +14,8 @@ import { useEffect, useState } from 'react'
 const Pricing: NextPage = () => {
     const [month, setMonth] = useState(true)
 
-    let yearPrices  = [0,216,378,540,1080]
-    let monthPrices  = [0,20,35,50,100]
+    let yearPrices  = ['yy','yy','yy','yy','yy']
+    let monthPrices  = ['xx','xx','xx','xx','xx']
 
     const changeDurationMonth = (e) => {
         let btns = document.getElementsByClassName('price-btn')
@@ -67,7 +67,7 @@ const Pricing: NextPage = () => {
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Free plan</span>
-                        <span className='block text-center font-bold text-[40px] mt-5 price'>$0/mo</span>
+                        <span className='block text-center font-bold text-[40px] mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -98,7 +98,7 @@ const Pricing: NextPage = () => {
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-pureWhite'>Free plan</span>
-                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$20/mo</span>
+                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -129,7 +129,7 @@ const Pricing: NextPage = () => {
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Standard plan</span>
-                        <span className='block text-center font-bold text-[40px] mt-5 price'>$35/mo</span>
+                        <span className='block text-center font-bold text-[40px] mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -160,7 +160,7 @@ const Pricing: NextPage = () => {
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2 bg-primaryBlue'>
                     <div className=''>
                         <span className='block text-center text-pureWhite'>Free plan</span>
-                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$50/mo</span>
+                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -191,7 +191,7 @@ const Pricing: NextPage = () => {
                 <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Enterprise plan</span>
-                        <span className='block text-center font-bold text-[40px] mt-5 price'>$100/mo</span>
+                        <span className='block text-center font-bold text-[40px] mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
