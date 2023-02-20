@@ -72,7 +72,7 @@ function Navbar() {
                 <GrClose size={30}/>
             </div>
         </div>
-        <div id="side-nav" className={showSideMenu?"nav fixed top-0 left-[0px] w-[250px] h-full z-[1000] bg-defaultBackground transition ease-in-out duration-700":"fixed top-0 left-[-250px] w-[250px] h-full z-[1000] bg-defaultBackground transition duration-700 ease-in-out"}>
+        <div id="side-nav" className={showSideMenu?"nav fixed top-0 left-[0px] w-[250px] h-full z-[1000] bg-defaultBackground overflow-scroll transition ease-in-out duration-700":"fixed top-0 left-[-250px] w-[250px] h-full z-[1000] bg-defaultBackground transition duration-700 ease-in-out"}>
             <div className='mt-7 mb-8'>
                 <Link href='/'>
                     <Image
@@ -116,7 +116,7 @@ function Navbar() {
                     <Link href="/about" className={location.pathname=='/about'?"block active":'block'}>About Us</Link>
                 </li>
             </ul>
-            <div className='m-auto'>
+            <div className='m-auto mb-5'>
                 <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto mb-2'><span className='block m-auto text-primaryBlue'>Log In</span></a>
                 <a href="#" className='flex border border-primaryBlue rounded-[4px] h-[40px] w-[100px] m-auto bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
             </div>
