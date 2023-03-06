@@ -14,7 +14,7 @@ function Footer() {
                     />
                     <br />
                     <div>
-                        <span className="block text-justify text-lg leading-7">
+                        <span className="block text-justify md:text-center text-lg leading-7">
                             Databoard is a cloud-based data platform, that is providing organizations with the tools to acquire, sort, and analyze first-party user data from their audience, to generate insights for efficient management.
                         </span>
                     </div>
