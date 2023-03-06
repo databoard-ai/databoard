@@ -1,6 +1,10 @@
-{
+{ 
+  "homepage": "https://dunjil.github.io/databoard",
+  "name":"databoard-app",
   "private": true,
   "scripts": {
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -17,6 +21,7 @@
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
     "autoprefixer": "^10.4.7",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.2",
     "typescript": "4.7.2"
