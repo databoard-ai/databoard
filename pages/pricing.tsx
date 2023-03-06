@@ -14,8 +14,8 @@ import { useEffect, useState } from 'react'
 const Pricing: NextPage = () => {
     const [month, setMonth] = useState(true)
 
-    let yearPrices  = [0,216,378,540,1080]
-    let monthPrices  = [0,20,35,50,100]
+    let yearPrices  = ['yy','yy','yy','yy','yy']
+    let monthPrices  = ['xx','xx','xx','xx','xx']
 
     const changeDurationMonth = (e) => {
         let btns = document.getElementsByClassName('price-btn')
@@ -49,7 +49,7 @@ const Pricing: NextPage = () => {
     })
     return(
         <>
-            <Navbar active='pricing'/>
+            <Navbar/>
             <div className='mt-12'>
                 <span className='block text-center text-[24px] text-primaryBlue font-semibold'>Our Pricing</span>
                 <span className='block text-center text-[40px] font-semibold mt-8'>Choose the 
@@ -63,11 +63,11 @@ const Pricing: NextPage = () => {
                 </div>
                 <span className='block text-center mt-2 text-[20px]'>Enjoy a 10 % discount on any annual subscription</span>
             </div>
-            <div className='flex justify-around my-12 mx-12'>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:justify-around my-12'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Free plan</span>
-                        <span className='block text-center font-bold text-[40px] mt-5 price'>$0/mo</span>
+                        <span className='block text-center font-bold text-[40px] mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -92,13 +92,13 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-pureWhite'>Free plan</span>
-                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$20/mo</span>
+                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -123,13 +123,13 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Standard plan</span>
-                        <span className='block text-center font-bold text-[40px] mt-5 price'>$35/mo</span>
+                        <span className='block text-center font-bold text-[40px] mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -154,13 +154,13 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2 bg-primaryBlue'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2 bg-primaryBlue'>
                     <div className=''>
                         <span className='block text-center text-pureWhite'>Free plan</span>
-                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$50/mo</span>
+                        <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -185,13 +185,13 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-pureWhite'><span className='block m-auto text-primaryBlue'>Get Started</span></button>
                     </div>
                 </div>
-                <div className='w-[230px] border border-[#C3C3C3] rounded-sm p-5 pb-2'>
+                <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm p-5 pb-2'>
                     <div className=''>
                         <span className='block text-center text-primaryBlue'>Enterprise plan</span>
-                        <span className='block text-center font-bold text-[40px] mt-5 price'>$100/mo</span>
+                        <span className='block text-center font-bold text-[40px] mt-5 price'>$xx/mo</span>
                     </div>
                     <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                     <div className=''>
@@ -216,11 +216,11 @@ const Pricing: NextPage = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <button className='flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
+                        <button className='btn flex mx-auto my-0 border border-primaryBlue rounded-[4px] h-[50px] w-[100px]  bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></button>
                     </div>
                 </div>
             </div>
-            <Brands/>
+            {/* <Brands/> */}
             <Join/>
             <Footer />
         </>

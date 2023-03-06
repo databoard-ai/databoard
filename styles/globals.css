@@ -17,3 +17,17 @@
     bg-primaryBlue
     rounded-sm
 }
+
+.btn:hover{
+    @apply -translate-y-1
+    transition ease-in-out duration-300
+}
+
+.blog-item{
+    overflow: hidden;
+}
+
+.blog-item:hover .img-transform{
+    transform: scale(1.1);
+    @apply transition ease-in-out duration-700
+}

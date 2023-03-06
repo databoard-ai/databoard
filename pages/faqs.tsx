@@ -32,13 +32,13 @@ const Faq: NextPage = () => {
 
     return(
         <>
-            <Navbar active='resources'/>
-            <div className='faq px-[10%] my-12'>
+            <Navbar/>
+            <div className='faq px-3 md:px-[10%] my-12'>
                 <div className='header'>
-                    <span className='block text-[50px] text-primaryBlue font-semibold'>Frequently Asked Questions</span>
-                    <span className='block text-[18px]'>Get to know the questions our clients ask most often</span>
+                    <span className='block text-[32px] lg:text-[50px] text-primaryBlue font-semibold'>Frequently Asked Questions</span>
+                    <span className='block text-[16px] lg:text-[18px]'>Get to know the questions our clients ask most often</span>
                 </div>
-                <div className='content mt-12 divide-y divide-grayInactive border border-x-0 border-grayInactive'>
+                <div className='content mt-5 lg:mt-12 divide-y divide-grayInactive border border-x-0 border-grayInactive'>
                     <div>
                         <div className='question flex justify-between items-center px-5 py-5 cursor-pointer border border-y-0 border-grayInactive' onClick={(e)=>showAnswer('1', e)}>
                             <span className='font-semibold'>What is Databoard?</span>
