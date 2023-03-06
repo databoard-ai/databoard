@@ -5,25 +5,25 @@ const Dropdown = require('../public/assets/arrow-down.png')
 const Dropup = require('../public/assets/arrow-up.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
-import { connected } from 'process'
 import { useState } from 'react'
-import PropTypes from 'prop-types'
 const Faq: NextPage = () => {
 
     const [show, setShow] = useState(false);
     const [showing, setShowing] = useState(false);
 
-    const showAnswer = (question:string, e:Element)=>{
+    const showAnswer = (question:string, e:Event)=>{
         let answers = document.getElementsByClassName('answer')
 
-        if (document?.getElementById(question).hidden) {
-            document?.getElementById(question).hidden = false;
-            e.target.classList.remove('border-y-0')
-            e.target.classList.add('border-b-1')
+        if (document.getElementById(question)?.hidden) {
+            document.getElementById(question)!.hidden = false;
+            const target=e.target as HTMLElement
+            target.classList.remove('border-y-0')
+            target.classList.add('border-b-1')
         }else{
-            document.getElementById(question).hidden = true;
-            e.target.classList.add('border-y-0')
-            e.target.classList.remove('border-b-1')
+            document.getElementById(question)!.hidden = true;
+            const target=e.target as HTMLElement
+            target.classList.add('border-y-0')
+            target.classList.remove('border-b-1')
         }
     }
 
