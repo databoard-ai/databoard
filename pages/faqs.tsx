@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
 const Logo1 = require('../public/assets/logo-home.png')
 const Dropdown = require('../public/assets/arrow-down.png')
@@ -7,20 +6,18 @@ const Dropup = require('../public/assets/arrow-up.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import { connected } from 'process'
-import Join from '../components/HomePages/Join'
-import Brands from '../components/HomePages/Brands'
 import { useState } from 'react'
-
+import PropTypes from 'prop-types'
 const Faq: NextPage = () => {
 
     const [show, setShow] = useState(false);
     const [showing, setShowing] = useState(false);
 
-    const showAnswer = (question, e)=>{
+    const showAnswer = (question:string, e:Element)=>{
         let answers = document.getElementsByClassName('answer')
 
-        if (document.getElementById(question).hidden) {
-            document.getElementById(question).hidden = false;
+        if (document?.getElementById(question).hidden) {
+            document?.getElementById(question).hidden = false;
             e.target.classList.remove('border-y-0')
             e.target.classList.add('border-b-1')
         }else{
