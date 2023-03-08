@@ -1,6 +1,6 @@
 { 
-  "homepage": "https://dunjil.github.io/databoard",
-  "name":"databoard-app",
+  "homepage": "https://databoard.github.io",
+  "name":"databoard-web",
   "private": true,
   "scripts": {
    "predeploy": "npm run build",
