@@ -6,26 +6,27 @@ const Dropup = require('../public/assets/arrow-up.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import { useState } from 'react'
+import { MouseEventHandler } from 'react';
 const Faq: NextPage = () => {
 
     const [show, setShow] = useState(false);
     const [showing, setShowing] = useState(false);
 
-    const showAnswer = (question:string, e:Event)=>{
-        let answers = document.getElementsByClassName('answer')
 
-        if (document.getElementById(question)?.hidden) {
-            document.getElementById(question)!.hidden = false;
-            const target=e.target as HTMLElement
-            target.classList.remove('border-y-0')
-            target.classList.add('border-b-1')
-        }else{
-            document.getElementById(question)!.hidden = true;
-            const target=e.target as HTMLElement
-            target.classList.add('border-y-0')
-            target.classList.remove('border-b-1')
+    const showAnswer = (question: string, e: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
+        const answer = document.getElementById(question);
+        if (answer?.hidden) {
+          answer.hidden = false;
+          const target = e.target as HTMLElement;
+          target.classList.remove('border-y-0');
+          target.classList.add('border-b-1');
+        } else {
+          answer!.hidden = true;
+          const target = e.target as HTMLElement;
+          target.classList.add('border-y-0');
+          target.classList.remove('border-b-1');
         }
-    }
+      };
 
     return(
         <>
@@ -37,7 +38,7 @@ const Faq: NextPage = () => {
                 </div>
                 <div className='content mt-5 lg:mt-12 divide-y divide-grayInactive border border-x-0 border-grayInactive'>
                     <div>
-                        <div className='question flex justify-between items-center px-5 py-5 cursor-pointer border border-y-0 border-grayInactive' onClick={(e)=>showAnswer('1', e)}>
+                        <div className='question flex justify-between items-center px-5 py-5 cursor-pointer border border-y-0 border-grayInactive' onClick={(e) => showAnswer('1', e)}>
                             <span className='font-semibold'>What is Databoard?</span>
                             <Image 
                             className='w-[15px] h-[10px]'
@@ -49,7 +50,7 @@ const Faq: NextPage = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <div className='question flex justify-between items-center px-5 py-5 cursor-pointer border border-y-0 border-grayInactive' onClick={(e)=>showAnswer('2',e)}>
+                        <div className='question flex justify-between items-center px-5 py-5 cursor-pointer border border-y-0 border-grayInactive' onClick={(e) => showAnswer('2', e)}>
                             <span className='font-semibold'>Who Can Use Databoard?</span>
                             <Image 
                             className='w-[15px] h-[10px]'

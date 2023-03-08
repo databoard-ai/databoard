@@ -47,12 +47,12 @@ const Index: NextPage = () => {
                     className='float-left w-[400px] mb-[-250px]'
                     alt='ellipse'
                     src={Ellipses}/>
-                    <center>
+                   
                     <Image 
                     className='relative top-[-35px] w-[350px]'
                     alt='phone'
                     src={Iphone}/>
-                    </center>
+                    
                     <Image 
                     className='float-right w-[400px] mt-[-210px]'
                     alt='ellipse'

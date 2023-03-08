@@ -17,12 +17,13 @@ const Pricing: NextPage = () => {
     let yearPrices  = ['yy','yy','yy','yy','yy']
     let monthPrices  = ['xx','xx','xx','xx','xx']
 
-    const changeDurationMonth = (e) => {
+    const changeDurationMonth = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         let btns = document.getElementsByClassName('price-btn')
         for (let i = 0; i < btns.length; i++) {
             btns[i].classList.remove('active');
         }
-        e.target.classList.add('active')
+        const target = e.target as HTMLElement
+        target.classList.add('active')
 
         let prices = document.getElementsByClassName('price')
 
@@ -31,12 +32,13 @@ const Pricing: NextPage = () => {
         }
     }
 
-    const changeDurationYear = (e) => {
+    const changeDurationYear = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         let btns = document.getElementsByClassName('price-btn')
         for (let i = 0; i < btns.length; i++) {
             btns[i].classList.remove('active');
         }
-        e.target.classList.add('active')
+        const target = e.target as HTMLElement
+        target.classList.add('active')
 
         let prices = document.getElementsByClassName('price')
 
