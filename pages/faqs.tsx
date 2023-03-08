@@ -14,6 +14,8 @@ const Faq: NextPage = () => {
 
 
     const showAnswer = (question: string, e: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
+        const oldLimit = Error.stackTraceLimit;
+Error.stackTraceLimit = 10000;
         const answer = document.getElementById(question);
         if (answer?.hidden) {
           answer.hidden = false;

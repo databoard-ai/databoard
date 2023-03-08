@@ -12,6 +12,8 @@ import Brands from '../components/HomePages/Brands'
 import { useEffect, useState } from 'react'
 
 const Pricing: NextPage = () => {
+    const oldLimit = Error.stackTraceLimit;
+Error.stackTraceLimit = 10000;
     const [month, setMonth] = useState(true)
 
     let yearPrices  = ['yy','yy','yy','yy','yy']

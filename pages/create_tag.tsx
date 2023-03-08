@@ -13,6 +13,8 @@ import AuthTimeInput from '../components/AuthTimePicker'
 import { useState } from 'react'
 
 const CreateTag: NextPage = () => {
+    const oldLimit = Error.stackTraceLimit;
+Error.stackTraceLimit = 10000;
     
     const [checkSecondary, setCheckSecondary] = useState(false);
 

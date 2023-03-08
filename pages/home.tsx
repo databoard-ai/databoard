@@ -18,7 +18,10 @@
   const downChevronIcon = require('../public/assets/down_chevron.png')
   
   const Home: NextPage = () => {
+    const oldLimit = Error.stackTraceLimit;
+Error.stackTraceLimit = 10000;
     return (
+      
       // <div className="font-montserrat">
       //   <Head>
       //     <title>Databoard</title>

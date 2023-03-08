@@ -8,6 +8,8 @@ import AuthInput from '../components/AuthInput'
 import AuthDropdown from '../components/AuthDropdown'
 
 const Setup: NextPage = () => {
+    const oldLimit = Error.stackTraceLimit;
+Error.stackTraceLimit = 10000;
     return(
         <>
             <div className='bg-primaryBlue h-[1117px] font-montserrat'>
