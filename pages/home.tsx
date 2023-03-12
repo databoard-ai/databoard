@@ -88,9 +88,9 @@ Error.stackTraceLimit = 10000;
         </Head>
         {/* <Login/> */}
         {/* <ForgotPass/> */}
-        {/* <Setup/> */}
+        <Setup/>
         {/* <CreateTag/> */}
-        <Index/>
+        {/* <Index/> */}
         {/* <Pricing/> */}
         {/* <About/> */}
         {/* <Blogs/> */}
