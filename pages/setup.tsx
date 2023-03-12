@@ -1,15 +1,11 @@
 import type { NextPage } from 'next'
 import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
-const googleLogo = require('../public/assets/flat-color-icons_google.png')
-const facebookLogo = require('../public/assets/logos_facebook.png')
 const bg_Img = require('../public/assets/setup_bg.png')
 import AuthInput from '../components/AuthInput'
 import AuthDropdown from '../components/AuthDropdown'
 
 const Setup: NextPage = () => {
-    const oldLimit = Error.stackTraceLimit;
-Error.stackTraceLimit = 10000;
     return(
         <>
             <div className='bg-primaryBlue h-[1117px] font-montserrat'>
