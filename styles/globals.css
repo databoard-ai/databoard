@@ -31,3 +31,10 @@
     transform: scale(1.1);
     @apply transition ease-in-out duration-700
 }
+
+/* Css for dashboard */
+
+.sidebar .active{
+    @apply bg-primaryBlue
+    text-pureWhite
+}
