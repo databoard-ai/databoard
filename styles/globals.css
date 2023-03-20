@@ -38,3 +38,11 @@
     @apply bg-primaryBlue
     text-pureWhite
 }
+
+.btn-toggle-insight .inactive{
+    cursor: not-allowed;
+    @apply bg-[#C3C3C3]
+}
+.btn-toggle-insight .active{
+    @apply bg-primaryBlue
+}
