@@ -12,7 +12,7 @@ Error.stackTraceLimit = 10000;
 
     const [showForm, setShowform] = useState(false)
     
-    const handleShow = (e)=>{
+    const handleShow = (e:Event)=>{
         e.preventDefault()
         setShowform(!showForm)
     }
