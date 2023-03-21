@@ -8,13 +8,13 @@ function Footer() {
             <div className="grid sm:grid-cols-5 mt-6">
                 <div className="col-span-5 lg:col-span-1 mt-[-15px] mr-5 mb-5">
                     <Image 
-                        className="m-auto w-[200px]"
+                        className="m-auto lg:m-0 w-[200px]"
                         src={Logo1}
                         alt='logo'
                     />
                     <br />
-                    <div>
-                        <span className="block text-justify md:text-center text-lg leading-7">
+                    <div className="">
+                        <span className="block text-justify md:text-left text-lg leading-7">
                             Databoard is a cloud-based data platform, that is providing organizations with the tools to acquire, sort, and analyze first-party user data from their audience, to generate insights for efficient management.
                         </span>
                     </div>
