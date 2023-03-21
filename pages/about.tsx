@@ -5,6 +5,7 @@ const Seyi = require('../public/assets/images/team/seyi.jpeg')
 const Isy = require('../public/assets/images/team/isy.png')
 const Team = require('../public/assets/images/team/team.png')
 const Michael = require('../public/assets/images/team/michael.png')
+const Grace = require('../public/assets/images/team/grace.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import Join from '../components/HomePages/Join'
@@ -36,6 +37,17 @@ const About: NextPage = () => {
                     <span className='block text-[16px] lg:text-[18px]'>We belive in the strength and uniqness of the young African mind.</span>
                 </div>
                 <div className='content mt-8 grid xsm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12'>
+                    <div className='team-item m-auto'>
+                        <div>
+                            <Image 
+                            alt='team'
+                            src={Grace}/>
+                        </div>
+                        <div className='mt-5'>
+                            <span className='block text-[18px] font-semibold'>Eche Grace</span>
+                            <span className='block text-[15px]'>Marketing</span>
+                        </div>
+                    </div>
                     <div className='team-item m-auto'>
                         <div>
                             <Image 

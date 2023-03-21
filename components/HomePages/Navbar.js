@@ -6,6 +6,7 @@ const Logo1 = require('../../public/assets/logo-home.png')
 const dropdown = require('../../public/assets/arrow-down.png')
 import { FiMenu, FiPlus, FiMinus } from 'react-icons/fi';
 import {GrClose} from 'react-icons/gr'
+import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 
 
 function Navbar() {
@@ -42,10 +43,10 @@ function Navbar() {
                     <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center hover:text-primaryBlue cursor-pointer active":"flex items-center hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
                         <span className="mr-1 block">Resources</span>
                         <div className={showdropdownMenu?"hidden":""}>
-                            <FiPlus size={20}/>
+                            <RxCaretDown size={20}/>
                         </div>
                         <div className={showdropdownMenu?"":"hidden"}>
-                            <FiMinus size={20}/>
+                            <RxCaretUp size={20}/>
                         </div>
                     </div>
                     <div className={showdropdownMenu? "absolute mt-5 w-[150px] z-1 bg-defaultBackground":"hidden"}>
@@ -63,7 +64,7 @@ function Navbar() {
             </div>
             <div className='hidden lg:flex gap-x-3'>
                 <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px]'><span className='block m-auto text-primaryBlue'>Log In</span></a>
-                <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[100px] bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
+                <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] px-5 bg-primaryBlue'><span className='block m-auto text-pureWhite'>Get Started</span></a>
             </div>
             <div className={showSideMenu?"hidden lg:hidden":"flex cursor-pointer lg:hidden"} onClick={showSmenu}>
                 <FiMenu size={30}/>
@@ -95,10 +96,10 @@ function Navbar() {
                     <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center mb-5  hover:text-primaryBlue cursor-pointer active":"flex items-center mb-5  hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
                         <span className="mr-5 block">Resources</span>
                         <div className={showdropdownMenu?"hidden":""}>
-                            <FiPlus size={20}/>
+                            <RxCaretDown size={20}/>
                         </div>
                         <div className={showdropdownMenu?"":"hidden"}>
-                            <FiMinus size={20}/>
+                            <RxCaretUp size={20}/>
                         </div>
                     </div>
                     <div className={showdropdownMenu? "ml-5":"hidden"}>
