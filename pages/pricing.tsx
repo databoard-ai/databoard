@@ -1,19 +1,13 @@
 import type { NextPage } from 'next'
-import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
-const Logo1 = require('../public/assets/logo-home.png')
 const Checkblue = require('../public/assets/check-square-blue.png')
 const Checkwhite = require('../public/assets/check-square.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
-import { connected } from 'process'
 import Join from '../components/HomePages/Join'
-import Brands from '../components/HomePages/Brands'
 import { useEffect, useState } from 'react'
 
 const Pricing: NextPage = () => {
-    const oldLimit = Error.stackTraceLimit;
-Error.stackTraceLimit = 10000;
     const [month, setMonth] = useState(true)
 
     let yearPrices  = ['yy','yy','yy','yy','yy']

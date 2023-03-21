@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import AuthButton from '../../components/AuthButton'
 import Image from 'next/image'
 const Blog1 = require('../../public/assets/images/blog/1.png')
 const Blog2 = require('../../public/assets/images/blog/2.png')

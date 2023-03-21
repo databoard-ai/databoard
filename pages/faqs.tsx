@@ -1,12 +1,9 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-const Logo1 = require('../public/assets/logo-home.png')
 const Dropdown = require('../public/assets/arrow-down.png')
-const Dropup = require('../public/assets/arrow-up.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import { useState } from 'react'
-import { MouseEventHandler } from 'react';
 const Faq: NextPage = () => {
 
     const [show, setShow] = useState(false);
@@ -14,8 +11,7 @@ const Faq: NextPage = () => {
 
 
     const showAnswer = (question: string, e: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
-        const oldLimit = Error.stackTraceLimit;
-Error.stackTraceLimit = 10000;
+ 
         const answer = document.getElementById(question);
         if (answer?.hidden) {
           answer.hidden = false;

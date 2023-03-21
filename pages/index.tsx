@@ -1,8 +1,6 @@
 
 import type { NextPage } from 'next'
-import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
-const Logo1 = require('../public/assets/logo-home.png')
 const Banner1 = require('../public/assets/banner-home.png')
 const Iphone = require('../public/assets/iphone.png')
 const Ellipses = require('../public/assets/ellipses.png')
@@ -13,7 +11,6 @@ const PhoneIco = require('../public/assets/phone-ico.png')
 const Security = require('../public/assets/Privacy.png')
 const Visual = require('../public/assets/Visual.png')
 const Connected = require('../public/assets/Connected.png')
-const Avatar = require('../public/assets/avatar.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import Join from '../components/HomePages/Join'
@@ -22,8 +19,7 @@ import Setup from './setup'
 import Head from 'next/head'
 
 const Index: NextPage = () => {
-const oldLimit = Error.stackTraceLimit;
-Error.stackTraceLimit = 10000;
+
     return(
         <>
             <Head>

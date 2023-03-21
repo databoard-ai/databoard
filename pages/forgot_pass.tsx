@@ -2,8 +2,6 @@ import type { NextPage } from 'next'
 import AuthButton from '../components/AuthButton'
 import AuthInput from '../components/AuthInput'
 import Image from 'next/image'
-const googleLogo = require('../public/assets/flat-color-icons_google.png')
-const facebookLogo = require('../public/assets/logos_facebook.png')
 const bg_Img = require('../public/assets/forgot_password_bg.png')
 
 const ForgotPass: NextPage = () => {

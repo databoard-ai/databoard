@@ -7,8 +7,6 @@ const bg_Img = require('../public/assets/sign in.png')
 import AuthInput from '../components/AuthInput'
 
 const Login: NextPage = () => {
-    const oldLimit = Error.stackTraceLimit;
-Error.stackTraceLimit = 10000;
     return(
         <>
             <div className='bg-primaryBlue h-[1117px] font-montserrat'>

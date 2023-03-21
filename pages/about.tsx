@@ -1,8 +1,5 @@
 import type { NextPage } from 'next'
-import AuthButton from '../components/AuthButton'
 import Image from 'next/image'
-const Logo1 = require('../public/assets/logo-home.png')
-const Banner1 = require('../public/assets/banner-home.png')
 const James = require('../public/assets/images/team/james.png')
 const Seyi = require('../public/assets/images/team/seyi.jpeg')
 const Isy = require('../public/assets/images/team/isy.png')
@@ -12,11 +9,8 @@ const Grace = require('../public/assets/images/team/grace.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import Join from '../components/HomePages/Join'
-import Brands from '../components/HomePages/Brands'
 
 const About: NextPage = () => {
-    const oldLimit = Error.stackTraceLimit;
-Error.stackTraceLimit = 10000;
     return(
         <>
             <Navbar/>
