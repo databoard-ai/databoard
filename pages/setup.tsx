@@ -12,9 +12,9 @@ Error.stackTraceLimit = 10000;
 
     const [showForm, setShowform] = useState(false)
     
-    const handleShow = (e:Event)=>{
+    const handleShow = (e:React.FormEvent<HTMLFormElement>): void =>{
         e.preventDefault()
-        setShowform(!showForm)
+        setShowform(showForm)
     }
     return(
         <>
