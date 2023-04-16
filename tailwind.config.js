@@ -5,8 +5,20 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif'],
+    },
     extend: {
-
+      backgroundImage: {
+        'home_banner': "url('../public/assets/databoard_bg.png')",
+        'clocker_banner': "url('../public/assets/clocker_bg.png')",
+        
+      },
+      colors: {
+        'databoard-blue': '#4283E4',
+        'dark-text':'#121212',
+        'inactive-text': '#838282',
+      },
     },
     screens: {
       'xsm': '540px', // min-width
@@ -26,9 +38,6 @@ module.exports = {
       'defaultBackground':'#F4F4F4',
       'primaryRed':' #FA4F4F'
     },
-    fontFamily:{
-      'montserrat':['Montserrat', 'sans-serif']
-    }
   },
   plugins: [],
 }

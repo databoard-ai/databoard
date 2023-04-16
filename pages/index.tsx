@@ -20,76 +20,61 @@ import Head from 'next/head'
 
 const Index: NextPage = () => {
 
-    return(
+    return (
         <>
             <Head>
                 <title>Databoard</title>
                 <link rel="shortcut icon" href="/fav.png" />
             </Head>
-            <Navbar/>
-            <div className='banner'>
-                <div className='banner-content absolute top-[25%] md:top-[25%] lg:top-[35%] m-auto z-[1] text-center w-full'>                    
-                  <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering You in<br/> a <span className='text-primaryBlue'>data-driven</span> world</span>
-                    <span className='block text-[16px] text-pureWhite mb-7'>Acquire Data, Discover significant insights, Optimize performance.
-                        <br/>Let us help you get more out of your audience without breaching privacy.
+            <Navbar />
+            <div className='flex h-screen items-center justify-center bg-cover bg-center bg-home_banner w-full'>
+                <div className='text-center w-full'>
+                    <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering You in<br /> a <span className='text-pureWhite'>data-driven</span> world</span>
+                    <span className='block text-[18px] text-pureWhite mb-7'>Acquire Data, Discover significant insights, Optimize performance.
+                        <br />Let us help you get more out of your audience without breaching privacy.
                     </span>
-                    <div>
-                        <input className='w-[270px] mb-2 text-[14px] lg:text-[16px] lg:w-[350px] h-[50px] pl-4' type="text" name="" id="" placeholder='Enter email for a 14 day enterprise trial'/><br/>
-                        <button className='bg-primaryBlue h-[50px] w-[100px] lg:w-[150px] text-pureWhite rounded-r-sm'>Get started</button>
-                    </div>
+
+
+                    <form className="  flex items-center rounded-lg justify-center w-full text-center">
+                        <div className='relative'>
+                            <input className="flex-1 bg-gray-100 rounded-l-lg py-4 w-80 px-4  mr-0 focus:outline-none focus:bg-white" type="email" placeholder="Enter email for a 14 day enterprise trial" />
+                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-normal py-4 px-10 rounded-r-lg bg-primaryBlue text-pureWhite">Get Started</button>
+                        </div>
+                    </form>
                 </div>
-                <div className='absolute z-[0] top-[90px] left-0 h-[450px] lg:h-[670px] w-[100%] bg-gradient-to-t from-[#121212] to-[rgba(1, 10, 38, 0.9)]'></div>
-                <Image
-                className='h-[450px] lg:h-[670px]'
-                alt='banner'
-                src={Banner1}
-                />
             </div>
-            <div className='cta grid xsm:grid-cols-2 overflow-hidden'>
-                <div className='hidden xsm:block mt-[90px] mb-[49.5px] ml-[20px]'>
-                    <Image 
-                    className='float-left w-[400px] mb-[-250px]'
-                    alt='ellipse'
-                    src={Ellipses}/>
-                   
-                    <Image 
-                    className='relative top-[-35px] w-[350px]'
-                    alt='phone'
-                    src={Iphone}/>
-                    
-                    <Image 
-                    className='float-right w-[400px] mt-[-210px]'
-                    alt='ellipse'
-                    src={Ellipses}/>
+            <div className=' grid xsm:grid-cols-2 py-12'>
+                <div className='hidden xsm:block bg-clocker_banner bg-contain bg-no-repeat bg-center'>
+                  
                 </div>
                 <div className='mt-5 xsm:mt-[80px] md:mt-[140px] xsm:ml-[20px]'>
                     <span className='block text-[40px] text-center xsm:text-left xsm:text-[40px] md:text-[64px] text-primaryBlue font-semibold'>Meet clocker</span>
                     <span className='block text-[18px] text-center xsm:text-left font-bold xsm:text-[24px] text-black mb-2'>Register your presence with Clocker</span>
                     <span className='block text-[16px] text-center xsm:text-left'>Clocker helps users to check into locations, events or any access point in seconds, by scanning Databoard access tags.
                         <br />
-                        Databoard works hand in hand with clocker, to drive efficiency with data. 
+                        Databoard works hand in hand with clocker, to drive efficiency with data.
                     </span>
                     <div className='flex gap-2 justify-center xsm:justify-start mt-3'>
-                        <Image 
-                        className='btn inline'
-                        alt='playstore'
-                        src={Playstore}/>
-                        <Image 
-                        className='btn inline'
-                        alt='applestore'
-                        src={Appstore}/>
+                        <Image
+                            className='btn inline'
+                            alt='playstore'
+                            src={Playstore} />
+                        <Image
+                            className='btn inline'
+                            alt='applestore'
+                            src={Appstore} />
                     </div>
                 </div>
                 <div className='mt-5 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden'>
-                    <Image 
-                    className='w-[200px] xsm:w-[350px] m-auto'
-                    alt='phone'
-                    src={Iphone}/>
+                    <Image
+                        className='w-[200px] xsm:w-[350px] m-auto'
+                        alt='phone'
+                        src={Iphone} />
                 </div>
             </div>
             <div className='cta grid sm:grid-cols-2 justify-center bg-[#F4F4F4] overflow-hidden'>
                 <div className='px-2 text-center sm:text-left md:pl-[20%]'>
-                    <span className='block text-[32px] lg:text-[40px] text-primaryBlue font-semibold mt-5 mb-2 lg:mt-[100px]'>Contact Us About 
+                    <span className='block text-[32px] lg:text-[40px] text-primaryBlue font-semibold mt-5 mb-2 lg:mt-[100px]'>Contact Us About
                         <br />
                         Databoard Software
                     </span>
@@ -97,11 +82,11 @@ const Index: NextPage = () => {
                     <div className='flex gap-2 justify-center sm:justify-start'>
                         <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] px-4 bg-primaryBlue'>
                             <span className='m-auto text-pureWhite'>
-                            <Image
-                            className='inline mr-1'
-                            alt='ico'
-                            src={PhoneIco}/>
-                            Contact Sales
+                                <Image
+                                    className='inline mr-1'
+                                    alt='ico'
+                                    src={PhoneIco} />
+                                Contact Sales
                             </span>
                         </a>
                         <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
@@ -109,9 +94,9 @@ const Index: NextPage = () => {
                 </div>
                 <div className='mt-5 mb-3'>
                     <Image
-                    className='w-[400px] xsm:w-[500px] m-auto'
-                    alt='cta2'
-                    src={Cta2}/>
+                        className='w-[400px] xsm:w-[500px] m-auto'
+                        alt='cta2'
+                        src={Cta2} />
                 </div>
             </div>
             <div className='cta bg-primaryBlue px-10 text-center overflow-hidden'>
@@ -122,25 +107,25 @@ const Index: NextPage = () => {
                     </div>
                     <div>
                         <Image
-                        className='w-[400px] m-auto' 
-                        alt='secure'
-                        src={Security}/>
+                            className='w-[400px] m-auto'
+                            alt='secure'
+                            src={Security} />
                     </div>
                 </div>
                 <div className='grid sm:grid-cols-2 lg:flex justify-around'>
                     <div className='sm:hidden'>
                         <span className='block text-[24px] sm:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-32 mb-5'>Insights and Reporting</span>
-                        <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br/>performance optimization</span>
+                        <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br />performance optimization</span>
                     </div>
                     <div>
                         <Image
-                        className='w-[400px]' 
-                        alt='visual'
-                        src={Visual}/>
+                            className='w-[400px]'
+                            alt='visual'
+                            src={Visual} />
                     </div>
                     <div className='hidden sm:block'>
-                        <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Insights and <br/>Reporting</span>
-                        <span className='block text-pureWhite text-[16px]'>Generate insights from data, for <br/>performance optimization</span>
+                        <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Insights and <br />Reporting</span>
+                        <span className='block text-pureWhite text-[16px]'>Generate insights from data, for <br />performance optimization</span>
                     </div>
                 </div>
                 <div className='grid sm:grid-cols-2 lg:flex justify-around'>
@@ -150,9 +135,9 @@ const Index: NextPage = () => {
                     </div>
                     <div>
                         <Image
-                        className='w-[400px]' 
-                        alt='connect'
-                        src={Connected}/>
+                            className='w-[400px]'
+                            alt='connect'
+                            src={Connected} />
                     </div>
                 </div>
             </div>
@@ -227,10 +212,10 @@ const Index: NextPage = () => {
                     <div className='bg-primaryBlue w-2 h-2 rounded-full ml-1'></div>
                </div>
             </div> */}
-            <Join/>
+            <Join />
             <Footer />
         </>
     )
-  }
-  
-  export default Index;
+}
+
+export default Index;
