@@ -1,8 +1,6 @@
 
 import type { NextPage } from 'next'
 import Image from 'next/image'
-const Banner1 = require('../public/assets/banner-home.png')
-const Iphone = require('../public/assets/iphone.png')
 const Ellipses = require('../public/assets/ellipses.png')
 const Playstore = require('../public/assets/playstore.png')
 const Appstore = require('../public/assets/applestore.png')
@@ -63,11 +61,11 @@ const Index: NextPage = () => {
                             src={Appstore} />
                     </div>
                 </div>
-                <div className='mt-5 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden'>
-                    <Image
+                <div className='mt-5 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden bg-clocker_iphone'>
+                    {/* <Image
                         className='w-[200px] xsm:w-[350px] m-auto'
                         alt='phone'
-                        src={Iphone} />
+                        src={Iphone} /> */}
                 </div>
             </div>
             <div className='cta grid sm:grid-cols-2 justify-center bg-[#F4F4F4] overflow-hidden'>
