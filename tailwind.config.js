@@ -10,8 +10,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'home_banner': "url('../public/assets/databoard_bg.png')",
-        'clocker_banner': "url('../public/assets/clocker_bg.png')",
+        'home_banner': "url('/public/assets/databoard_bg.png')",
+        'clocker_banner': "url('/public/assets/clocker_bg.png')",
+        'clocker_iphone': "url('/public/assets/iphone_bg.png')",
         
       },
       colors: {
