@@ -33,12 +33,10 @@ const Index: NextPage = () => {
                     <span className='block text-[18px] text-pureWhite mb-7'>Acquire Data, Discover significant insights, Optimize performance.
                         <br />Let us help you get more out of your audience without breaching privacy.
                     </span>
-
-
-                    <form className="  flex items-center rounded-lg justify-center w-full text-center">
+                    <form className="flex items-center rounded-lg justify-center w-full text-center">
                         <div className='relative'>
-                            <input className="flex-1 bg-gray-100 rounded-l-lg py-4 w-80 px-4  mr-0 focus:outline-none focus:bg-white" type="email" placeholder="Enter email for a 14 day enterprise trial" />
-                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-normal py-4 px-10 rounded-r-lg bg-primaryBlue text-pureWhite">Get Started</button>
+                            <input className="flex-1 bg-gray-100 rounded-l-lg py-4 md:w-80 px-4 text-xs md:text-sm  mr-0 focus:outline-none focus:bg-white" type="email" placeholder="Enter email for a 14 day enterprise trial" />
+                            <button className=" bg-primaryBlue hover:bg-blue-700 text-white font-normal px-2 md:text-sm py-4 text-xs md:px-10 rounded-r-lg text-pureWhite">Get Started</button>
                         </div>
                     </form>
                 </div>
