@@ -70,8 +70,8 @@ const Pricing: NextPage = () => {
                     <span className='block text-center text-[20px]'>Databoard fits perfectly for organizations big and small. <br />Regardless of your budget</span>
                     <div className='flex justify-center mt-12'>
                         <div className='border border-primaryBlue rounded-sm p-1'>
-                            <button className='price-btn active' onClick={(e) => changeDurationMonth(e)}>Monthly</button>
-                            <button className='price-btn ml-2' onClick={(e) => changeDurationYear(e)}>Yearly</button>
+                            <button className='price-btn active ease-in-out duration-1000 rounded-lg' onClick={(e) => changeDurationMonth(e)}>Monthly</button>
+                            <button className='price-btn ml-2 ease-in-out duration-1000 rounded-lg' onClick={(e) => changeDurationYear(e)}>Yearly</button>
                         </div>
                     </div>
                     <span className='block text-center mt-2 text-[20px]'>Enjoy a 10 % discount on any annual subscription</span>
@@ -111,7 +111,7 @@ const Pricing: NextPage = () => {
                     <div className='w-[230px] m-auto sm:m-none mb-3 border border-[#C3C3C3] rounded-sm bg-primaryBlue p-5 pb-2 py-12'>
                         <div className=''>
                             <span className='block text-center text-pureWhite'>Starter plan</span>
-                            <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price'>{starterPlan}</span>
+                            <span className='block text-center font-bold text-[40px] text-pureWhite mt-5 price ease-in-out duration-1000'>{starterPlan}</span>
                         </div>
                         <hr className='w-[95%] m-auto my-3 text-[#C3C3C3]' />
                         <div className=''>
