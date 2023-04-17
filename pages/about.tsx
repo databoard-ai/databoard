@@ -29,9 +29,9 @@ const About: NextPage = () => {
                     <span className='block text-[20px] text-center w-[90%]'>Databoard, an African startup, aims to revolutionize the way African organizations connect with their audiences through the use of data technology. Our goal is to become the leading provider of data technology solutions that enable African organizations to make data-driven decisions.</span>
                 </div>
                 <br />
-                <div className='flex justify-center'> 
+                {/* <div className='flex justify-center'> 
                     <span className='block text-[20px] text-center w-[90%]'>Our value proposition is to provide African organizations with the tools to collect, sort, and analyze their users' data to provide actionable insights for efficient management and communication. Our data technology transforms the way organizations interact with their audiences, leading to improved customer satisfaction, increased engagement, and business growth.</span>
-                </div>
+                </div> */}
             </div>
             <div className='team px-3 md:px-12 my-12'>
                 <div className='header'>
