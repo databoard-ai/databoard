@@ -78,3 +78,15 @@ body {
     /* Move the background image up by 20px */
     transform: translateY(-20px);
   }
+
+  .home-banner {
+    background-image: theme('backgroundImage.home_banner');
+  }
+
+  .clocker-banner {
+    background-image: theme('backgroundImage.clocker_banner');
+  }
+
+  .clocker-iphone {
+    background-image: theme('backgroundImage.clocker_iphone');
+  }

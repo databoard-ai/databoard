@@ -33,7 +33,7 @@ const Index: NextPage = () => {
                 <link rel="shortcut icon" href="/fav.png" />
             </Head>
             <Navbar />
-            <div className='flex h-screen items-center justify-center bg-cover bg-center bg-home_banner w-full'>
+            <div className='flex h-screen items-center justify-center bg-cover bg-center home-banner w-full'>
                 <div className='text-center w-full'>
                     <span className='block text-[32px] lg:text-[64px] font-semibold text-pureWhite'>Empowering You in<br /> a <span className='text-pureWhite'>data-driven</span> world</span>
                     <span className='block text-[18px] text-pureWhite mb-7'>Acquire Data, Discover significant insights, Optimize performance.
@@ -48,7 +48,7 @@ const Index: NextPage = () => {
                 </div>
             </div>
             <div className=' grid xsm:grid-cols-2 py-20'>
-                <div className='hidden xsm:block bg-clocker_banner bg-contain bg-no-repeat bg-center' id='moving-bg'>
+                <div className='hidden xsm:block clocker-banner bg-contain bg-no-repeat bg-center' id='moving-bg'>
                   
                 </div>
                 <div className='mt-5 xsm:mt-[80px] md:mt-[140px] xsm:ml-[20px]'>
@@ -69,7 +69,7 @@ const Index: NextPage = () => {
                             src={Appstore} />
                     </div>
                 </div>
-                <div className='mt-10 py-20 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden bg-clocker_iphone h-full bg-contain bg-no-repeat bg-center' id='moving-bg'>
+                <div className='mt-10 py-20 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden clocker-iphone h-full bg-contain bg-no-repeat bg-center' id='moving-bg'>
                     {/* <Image
                         className='w-[200px] xsm:w-[350px] m-auto'
                         alt='phone'
