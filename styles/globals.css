@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -52,3 +53,28 @@ body {
 .btn-toggle-insight .active{
     @apply bg-primaryBlue
 }
+
+@keyframes move-background {
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-10%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+  
+  #moving-bg {
+    animation: move-background 30s linear infinite;
+    overflow: hidden;
+  }
+
+  .sm-bg{
+    transition: transform 0.5s ease-out;
+  }
+  .sm-bg:hover {
+    /* Move the background image up by 20px */
+    transform: translateY(-20px);
+  }

@@ -1,4 +1,4 @@
-
+import { useEffect,useRef } from 'react';
 import type { NextPage } from 'next'
 import Image from 'next/image'
 const Ellipses = require('../public/assets/ellipses.png')
@@ -12,12 +12,20 @@ const Connected = require('../public/assets/Connected.png')
 import Navbar from '../components/HomePages/Navbar'
 import Footer from '../components/HomePages/Footer'
 import Join from '../components/HomePages/Join'
-import Brands from '../components/HomePages/Brands'
 import Setup from './setup'
 import Head from 'next/head'
 
 const Index: NextPage = () => {
-
+    const bgRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        const bgElement = document.getElementById("moving_image");
+        window.addEventListener("scroll", () => {
+          if (!bgElement) return;
+          const yPos = -(window.pageYOffset / 6);
+          bgElement.style.backgroundPosition = `center ${yPos}px`;
+        });
+      }, []);
+      
     return (
         <>
             <Head>
@@ -33,14 +41,14 @@ const Index: NextPage = () => {
                     </span>
                     <form className="flex items-center rounded-lg justify-center w-full text-center">
                         <div className='relative'>
-                            <input className="flex-1 bg-gray-100 rounded-l-lg py-4 md:w-80 px-4 text-xs md:text-sm  mr-0 focus:outline-none focus:bg-white" type="email" placeholder="Enter email for a 14 day enterprise trial" />
-                            <button className=" bg-primaryBlue hover:bg-blue-700 text-white font-normal px-2 md:text-sm py-4 text-xs md:px-10 rounded-r-lg text-pureWhite">Get Started</button>
+                            <input className="flex-1 bg-gray-100 rounded-l-lg py-4 md:w-80 px-4 text-xs md:text-sm  mr-0 focus:outline-none focus:bg-white" type="email" placeholder="Enter Email to join our Waitlist" />
+                            <button className=" bg-primaryBlue hover:bg-blue-700 text-white font-normal px-2 md:text-sm py-4 text-xs md:px-10 rounded-r-lg text-pureWhite">Get Early Access</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div className=' grid xsm:grid-cols-2 py-12'>
-                <div className='hidden xsm:block bg-clocker_banner bg-contain bg-no-repeat bg-center'>
+            <div className=' grid xsm:grid-cols-2 py-20'>
+                <div className='hidden xsm:block bg-clocker_banner bg-contain bg-no-repeat bg-center' id='moving-bg'>
                   
                 </div>
                 <div className='mt-5 xsm:mt-[80px] md:mt-[140px] xsm:ml-[20px]'>
@@ -61,7 +69,7 @@ const Index: NextPage = () => {
                             src={Appstore} />
                     </div>
                 </div>
-                <div className='mt-5 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden bg-clocker_iphone'>
+                <div className='mt-10 py-20 xsm:mt-[90px] mb-[49.5px] ml-[20px] xsm:hidden bg-clocker_iphone h-full bg-contain bg-no-repeat bg-center' id='moving-bg'>
                     {/* <Image
                         className='w-[200px] xsm:w-[350px] m-auto'
                         alt='phone'
@@ -76,16 +84,16 @@ const Index: NextPage = () => {
                     </span>
                     <span className='block text-[15px] mb-5'>We will love to help you acquire your user audience with ease, and also help you unlock hidden trends beneath their clocking-in data. Optimize performance and establish peak efficiency with Databoard. Here are a few ways to reach out to our sales team.</span>
                     <div className='flex gap-2 justify-center sm:justify-start'>
-                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] px-4 bg-primaryBlue'>
+                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] px-4 w-auto bg-primaryBlue'>
                             <span className='m-auto text-pureWhite'>
                                 <Image
-                                    className='inline mr-1'
+                                    className='inline mr-2'
                                     alt='ico'
                                     src={PhoneIco} />
                                 Contact Sales
                             </span>
                         </a>
-                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] w-[130px]'><span className='m-auto text-primaryBlue'>Get Started</span></a>
+                        <a href="#" className='btn px-4 flex border border-primaryBlue rounded-[4px] h-[50px] w-auto'><span className='m-auto text-primaryBlue px-4'>Get Started</span></a>
                     </div>
                 </div>
                 <div className='mt-5 mb-3'>
@@ -96,26 +104,26 @@ const Index: NextPage = () => {
                 </div>
             </div>
             <div className='cta bg-primaryBlue px-10 text-center overflow-hidden'>
-                <div className='grid sm:grid-cols-2 lg:flex justify-around'>
+                <div className='grid sm:grid-cols-2 lg:flex justify-around my-2'>
                     <div className=''>
                         <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Privacy-focused Data acquisitor</span>
                         <span className='block text-pureWhite xsm:text-[16px]'>We focus on the data security of our users and priotizie thier privacy before anything else</span>
                     </div>
                     <div>
                         <Image
-                            className='w-[400px] m-auto'
+                            className='w-[400px] m-auto sm-bg'
                             alt='secure'
                             src={Security} />
                     </div>
                 </div>
-                <div className='grid sm:grid-cols-2 lg:flex justify-around'>
+                <div className='grid sm:grid-cols-2 lg:flex justify-around my-2'>
                     <div className='sm:hidden'>
                         <span className='block text-[24px] sm:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-32 mb-5'>Insights and Reporting</span>
                         <span className='block text-pureWhite text-[16px]'>Generate insights from data or <br />performance optimization</span>
                     </div>
                     <div>
                         <Image
-                            className='w-[400px]'
+                            className='w-[400px] sm-bg'
                             alt='visual'
                             src={Visual} />
                     </div>
@@ -124,14 +132,14 @@ const Index: NextPage = () => {
                         <span className='block text-pureWhite text-[16px]'>Generate insights from data, for <br />performance optimization</span>
                     </div>
                 </div>
-                <div className='grid sm:grid-cols-2 lg:flex justify-around'>
+                <div className='grid sm:grid-cols-2 lg:flex justify-around my-2'>
                     <div>
                         <span className='block text-[24px] sm:text-[30px] md:text-[40px] font-semibold text-pureWhite mt-5 sm:mt-20 lg:mt-32 mb-3'>Communication tool</span>
                         <span className='block text-pureWhite xsm:text-[16px]'>Target and Engage your Databoard <br />audience with our communication tools.</span>
                     </div>
                     <div>
                         <Image
-                            className='w-[400px]'
+                            className='w-[400px] sm-bg'
                             alt='connect'
                             src={Connected} />
                     </div>
