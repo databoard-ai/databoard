@@ -36,11 +36,11 @@ function Navbar() {
                 </Link>
             </div>
             <div className='hidden lg:flex'>
-                <Link id="home" href="/" className={location.pathname=="/"?'mx-[15px] active':'mx-[15px] font-medium hover:text-primaryBlue'}>Home</Link>
+                <Link id="home" href="/" className={location.pathname=="/"?'mx-[15px] active font-semibold':'mx-[15px] font-medium hover:text-primaryBlue'}>Home</Link>
                 <Link id="board" href="#" className='mx-[15px] hover:text-primaryBlue'>Board</Link>
-                <Link id="pricing" href="/pricing" className={location.pathname=="/pricing"?'mx-[15px] active':'mx-[15px] font-medium hover:text-primaryBlue'}>Pricing</Link>
+                <Link id="pricing" href="/pricing" className={location.pathname=="/pricing"?'mx-[15px] active font-semibold':'mx-[15px] font-medium hover:text-primaryBlue'}>Pricing</Link>
                 <div className="overflow-hidden">
-                    <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center font-medium hover:text-primaryBlue cursor-pointer active":"flex items-center hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
+                    <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center font-semibold hover:text-primaryBlue cursor-pointer active":"flex items-center hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
                         <span className="mr-1 block">Resources</span>
                         <div className={showdropdownMenu?"hidden":""}>
                             <RxCaretDown size={20}/>
@@ -49,8 +49,8 @@ function Navbar() {
                             <RxCaretUp size={20}/>
                         </div>
                     </div>
-                    <div className={showdropdownMenu? "absolute mt-5 w-[150px] z-1 bg-defaultBackground":"hidden"}>
-                        <ul className="">
+                    <div className={showdropdownMenu? "absolute mt-5 w-[150px] z-1 bg-defaultBackground ease-in-out duration-1000":"hidden ease-in-out duration-1000"}>
+                        <ul className="py-12 px-5 ease-in-out duration-1000">
                             <li className="hover:text-primaryBlue mb-3 ml-2">
                                 <Link href="/blog" className={location.pathname=='/blog'?"block active":'block'}>Blog</Link>
                             </li>
