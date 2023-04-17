@@ -3,7 +3,8 @@ import Image from 'next/image'
 const James = require('../public/assets/images/team/james.png')
 const Seyi = require('../public/assets/images/team/seyi.jpeg')
 const Isy = require('../public/assets/images/team/isy.png')
-const Team = require('../public/assets/images/team/team.png')
+const Chisom = require('../public/assets/images/team/chisom.jpeg')
+const Duna = require('../public/assets/images/team/duna.jpeg')
 const Michael = require('../public/assets/images/team/michael.png')
 const Grace = require('../public/assets/images/team/grace.png')
 import Navbar from '../components/HomePages/Navbar'
@@ -14,9 +15,10 @@ const About: NextPage = () => {
     return(
         <>
             <Navbar/>
-            <div className='mt-12'>
+            <div className='mt-12 px-12'>
                 <div className='flex justify-center'> 
-                    <span className='block text-[40px] lg:text-[60px] font-semibold text-center w-[90%] md:w-[70%]'>We are on a mission to bring you on board with data</span>
+                    <div className='block text-[40px] lg:text-[60px] font-semibold text-center w-[90%] md:w-[70%]'><span>We are on a mission to bring you on </span><span className=' text-primaryBlue px-4'> board</span><span>with your data</span></div>
+                    
                 </div>
                 <br />
                 <div className='flex justify-center'> 
@@ -36,7 +38,7 @@ const About: NextPage = () => {
                     <span className='block text-[32px] lg:text-[50px] text-primaryBlue font-semibold'>Our team</span>
                     <span className='block text-[16px] lg:text-[18px]'>We belive in the strength and uniqness of the young African mind.</span>
                 </div>
-                <div className='content mt-8 grid xsm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12'>
+                <div className='content px-12 mt-8 grid xsm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-14'>
                     <div className='team-item m-auto'>
                         <div>
                             <Image 
@@ -85,10 +87,21 @@ const About: NextPage = () => {
                         <div className='bg-primaryBlue'>
                             <Image 
                             alt='team'
-                            src={Team}/>
+                            src={Duna}/>
                         </div>
                         <div className='mt-5'>
                             <span className='block text-[18px] font-semibold'>Jilang Duna</span>
+                            <span className='block text-[15px]'>Engineering</span>
+                        </div>
+                    </div>
+                    <div className='team-item m-auto'>
+                        <div className='bg-primaryBlue'>
+                            <Image 
+                            alt='team'
+                            src={Chisom}/>
+                        </div>
+                        <div className='mt-5'>
+                            <span className='block text-[18px] font-semibold'>Chisom Nteh</span>
                             <span className='block text-[15px]'>Engineering</span>
                         </div>
                     </div>
