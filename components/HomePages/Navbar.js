@@ -36,11 +36,11 @@ function Navbar() {
                 </Link>
             </div>
             <div className='hidden lg:flex'>
-                <Link id="home" href="/" className={location.pathname=="/"?'mx-[15px] active':'mx-[15px] hover:text-primaryBlue'}>Home</Link>
+                <Link id="home" href="/" className={location.pathname=="/"?'mx-[15px] active':'mx-[15px] font-medium hover:text-primaryBlue'}>Home</Link>
                 <Link id="board" href="#" className='mx-[15px] hover:text-primaryBlue'>Board</Link>
-                <Link id="pricing" href="/pricing" className={location.pathname=="/pricing"?'mx-[15px] active':'mx-[15px] hover:text-primaryBlue'}>Pricing</Link>
+                <Link id="pricing" href="/pricing" className={location.pathname=="/pricing"?'mx-[15px] active':'mx-[15px] font-medium hover:text-primaryBlue'}>Pricing</Link>
                 <div className="overflow-hidden">
-                    <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center hover:text-primaryBlue cursor-pointer active":"flex items-center hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
+                    <div className={location.pathname=='/blog'||location.pathname=='/faqs'?"flex items-center font-medium hover:text-primaryBlue cursor-pointer active":"flex items-center hover:text-primaryBlue cursor-pointer"} onClick={showDdmenu}>
                         <span className="mr-1 block">Resources</span>
                         <div className={showdropdownMenu?"hidden":""}>
                             <RxCaretDown size={20}/>

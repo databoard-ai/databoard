@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-const Logo1 = require('/assets/Databoard Assets/artboard_x75.png')
+import Logo1 from '../../public/assets/databoard_assets/artboard_x75.png'
 
 function Footer() {
     return (
