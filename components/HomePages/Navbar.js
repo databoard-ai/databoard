@@ -114,7 +114,7 @@ function Navbar() {
                     </div>
                 </li>
                 <li className="mb-5 hover:text-primaryBlue">
-                    <Link href="/about" className={location.pathname=='/about'?"block active":'block'}>About Us</Link>
+                    <Link href="/about" className={location.pathname=='/about'?"block active font-semibold":'block font-medium'}>About Us</Link>
                 </li>
             </ul>
             <div className='m-auto mb-5'>
