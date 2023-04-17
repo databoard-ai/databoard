@@ -84,7 +84,7 @@ const Index: NextPage = () => {
                     </span>
                     <span className='block text-[15px] mb-5'>We will love to help you acquire your user audience with ease, and also help you unlock hidden trends beneath their clocking-in data. Optimize performance and establish peak efficiency with Databoard. Here are a few ways to reach out to our sales team.</span>
                     <div className='flex gap-2 justify-center sm:justify-start'>
-                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] h-[50px] px-4 w-auto bg-primaryBlue'>
+                        <a href="#" className='btn flex border border-primaryBlue rounded-[4px] py-4 px-4 w-auto duration-1000 bg-primaryBlue'>
                             <span className='m-auto text-pureWhite'>
                                 <Image
                                     className='inline mr-2'
@@ -93,7 +93,7 @@ const Index: NextPage = () => {
                                 Contact Sales
                             </span>
                         </a>
-                        <a href="#" className='btn px-4 flex border border-primaryBlue rounded-[4px] h-[50px] w-auto'><span className='m-auto text-primaryBlue px-4'>Get Started</span></a>
+                        <a href="#" className='btn px-4 flex border border-primaryBlue rounded-[4px] py-4 duration-1000 w-auto'><span className='m-auto text-primaryBlue px-4'>Get Started</span></a>
                     </div>
                 </div>
                 <div className='mt-5 mb-3'>
