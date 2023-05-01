@@ -25,6 +25,8 @@ const Waitlist: NextPage = () => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
+    const [buttonText, setButtonText] = useState('Proceed');
+    const [buttonDisabled, setButtonDisabled] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
 
@@ -44,6 +46,8 @@ const Waitlist: NextPage = () => {
 
     const handleSubmit = async(event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        setButtonDisabled(true);
+        setButtonText('Loading...');
         if (!name || !email || !phone) {
             alert("Please fill up all fields");
             return;
@@ -61,6 +65,8 @@ const Waitlist: NextPage = () => {
         
           // re-enable the button and clear loading state
           setIsLoading(false);
+          setButtonDisabled(false);
+          setButtonText('Proceed');
     };
 
     const createRecord = async (name:String, email:String, phone:String) => {
@@ -85,9 +91,7 @@ const Waitlist: NextPage = () => {
       };
   
 
-      // set the button's text and disabled state based on loading state
-const buttonText = isLoading ? "Loading..." : "Proceed";
-const buttonDisabled = isLoading ? true : false;
+
     return (
         <>
             <Navbar />
@@ -112,7 +116,7 @@ const buttonDisabled = isLoading ? true : false;
                 <div className="flex flex-row items-center gap-4 mb-28">
                     <label className="flex flex-col w-full">
                         <span>Phone Number</span>
-                        <input type="tel" name="phone" value={phone} onChange={handlePhoneChange} required className="border-gray-400 border-2 focus:border-2 rounded-md px-2 w-full h-[48px] rounded-l-lg py-4 md:w-80  text-xs md:text-sm" />
+                        <input type="tel" name="phone" value={phone} onChange={handlePhoneChange} required className="border-gray-400 border-2 focus:border-blue-500  rounded-md px-2 w-full h-[48px] rounded-l-lg py-4 md:w-80  text-xs md:text-sm" />
                     </label>
                     <div className='flex flex-col w-full'>
                     <button type="submit" disabled={buttonDisabled} className="bg-primaryBlue hover:bg-blue-700 mt-5 text-white font-normal px-2 md:text-sm py-4 text-xs md:px-12  h-[48px] rounded-lg text-pureWhite md:w-80">{buttonText}</button>
