@@ -14,9 +14,9 @@ type Props = {
 }
 
 
-const AIRTABLE_API_KEY = 'YOUR_API_KEY';
-const AIRTABLE_BASE_ID = 'YOUR_BASE_ID';
-const AIRTABLE_TABLE_NAME = 'YOUR_TABLE_NAME';
+const AIRTABLE_API_KEY = 'patjhhl6FnXz2AIY7.2f7a975da39ecf43e00c47ea3e9ff624697ab873e0c81f37408a49a4f9d72a3c';
+const AIRTABLE_BASE_ID = 'appAcSrJXpkEi7tem/tblFjiKc6NLXZZW3P';
+const AIRTABLE_TABLE_NAME = 'Waitlist';
 
 
 
@@ -51,8 +51,8 @@ const Waitlist: NextPage = () => {
         if (!name || !email || !phone) {
             alert("Please fill up all fields");
             return;
-          }
-          try {
+        }
+            try {
             await createRecord(name, email, phone);
             
             setName("");
@@ -74,7 +74,7 @@ const Waitlist: NextPage = () => {
           `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_NAME}`,
           {
             fields: {
-              Name: name,
+              BusinessName: name,
               Email: email,
               Phone: phone,
             },
