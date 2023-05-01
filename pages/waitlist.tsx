@@ -102,7 +102,7 @@ const Waitlist: NextPage = () => {
                 <span className='block text-center text-[20px]'>Databoard fits perfectly for organizations big and small. <br />Regardless of your budget</span>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-10 mx-auto max-w-lg">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-10 mx-auto max-w-lg p-4">
                 <div className="flex flex-row items-center gap-4">
                     <label className="flex flex-col w-full">
                         <span>Email Address</span>
