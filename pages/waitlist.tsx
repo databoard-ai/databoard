@@ -8,6 +8,7 @@ import Join from '../components/HomePages/Join'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router';
 import axios from 'axios';
+import AlertBox from '../components/HomePages/AlertBox';
 
 type Props = {
     value: string;
@@ -15,7 +16,7 @@ type Props = {
 
 
 const AIRTABLE_API_KEY = 'patjhhl6FnXz2AIY7.2f7a975da39ecf43e00c47ea3e9ff624697ab873e0c81f37408a49a4f9d72a3c';
-const AIRTABLE_BASE_ID = 'appAcSrJXpkEi7tem/tblFjiKc6NLXZZW3P';
+const AIRTABLE_BASE_ID = 'appAcSrJXpkEi7tem';
 const AIRTABLE_TABLE_NAME = 'Waitlist';
 
 
@@ -49,7 +50,7 @@ const Waitlist: NextPage = () => {
         setButtonDisabled(true);
         setButtonText('Loading...');
         if (!name || !email || !phone) {
-            alert("Please fill up all fields");
+        <AlertBox type="error" message="Please fill in all the fields." />
             return;
         }
             try {
@@ -58,9 +59,10 @@ const Waitlist: NextPage = () => {
             setName("");
             setEmail("");
             setPhone("");
-            alert("Thanks for joining our waitlist!");
+            <AlertBox type="success" message="Thanks for joining the waitlist" />;
           } catch (error) {
-            alert("An error occurred. Please try again later.");
+            console.log("This is the error: "+error);
+            <AlertBox type="error" message="Something went wrong." />
           }
         
           // re-enable the button and clear loading state
