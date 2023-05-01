@@ -26,7 +26,7 @@ const Waitlist: NextPage = () => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [buttonText, setButtonText] = useState('Proceed');
-    const [buttonDisabled, setButtonDisabled] = useState(true);
+    const [buttonDisabled, setButtonDisabled] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
 
