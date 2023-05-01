@@ -90,3 +90,19 @@ body {
   .clocker-iphone {
     background-image: theme('backgroundImage.clocker_iphone');
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+  }
+.join-div{
+  margin-bottom: 15rem;
+}
+  .footer-container {
+  
+    flex-direction: column;
+  }
+  

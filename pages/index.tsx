@@ -1,5 +1,6 @@
 import { useEffect,useRef } from 'react';
 import type { NextPage } from 'next'
+import Link from "next/link";
 import Image from 'next/image'
 const Ellipses = require('../public/assets/ellipses.png')
 const Playstore = require('../public/assets/playstore.png')
@@ -42,7 +43,7 @@ const Index: NextPage = () => {
                     <form className="flex items-center rounded-lg justify-center w-full text-center">
                         <div className='relative'>
                             <input className="flex-1 bg-gray-100 rounded-l-lg py-4 md:w-80 px-4 text-xs md:text-sm  mr-0 focus:outline-none focus:bg-white" type="email" placeholder="Enter Email to join our Waitlist" />
-                            <button className=" bg-primaryBlue hover:bg-blue-700 text-white font-normal px-2 md:text-sm py-4 text-xs md:px-10 rounded-r-lg text-pureWhite">Get Early Access</button>
+                          <Link id="waitlist" href="/waitlist">  <button className=" bg-primaryBlue hover:bg-blue-700 text-white font-normal px-2 md:text-sm py-4 text-xs md:px-10 rounded-r-lg text-pureWhite">Get Early Access</button></Link>
                         </div>
                     </form>
                 </div>

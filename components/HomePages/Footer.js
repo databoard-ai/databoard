@@ -4,7 +4,8 @@ import Logo1 from '../../public/assets/databoard_assets/artboard_x75.png'
 
 function Footer() {
     return (
-        <div className='footer bg-[#010A26] px-5 text-pureWhite pt-9'>
+       <div className="footer-container">
+         <div className='footer bg-[#010A26] px-5 text-pureWhite pt-9'>
             <div className="grid sm:grid-cols-5 mt-6">
                 <div className="col-span-5 lg:col-span-1 mt-[-15px] mr-5 mb-5">
                     <Image 
@@ -15,7 +16,7 @@ function Footer() {
                     <br />
                     <div className="">
                         <span className="block text-justify md:text-left text-lg leading-7">
-                            Databoard is a cloud-based data platform, that is providing organizations with the tools to acquire, sort, and analyze first-party user data from their audience, to generate insights for efficient management.
+                            {/* Databoard is a cloud-based data platform, that is providing organizations with the tools to acquire, sort, and analyze first-party user data from their audience, to generate insights for efficient management. */}
                         </span>
                     </div>
                 </div>
@@ -65,6 +66,7 @@ function Footer() {
             </div>
             <div></div>
         </div>
+       </div>
     )
 }
 
