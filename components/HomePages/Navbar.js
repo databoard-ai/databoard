@@ -32,6 +32,7 @@ function Navbar() {
                     <Image
                     src={Logo1}
                     alt = 'Logo'
+                    className='w-24 md:w-32 lg:w-40'
                     />
                 </Link>
             </div>
