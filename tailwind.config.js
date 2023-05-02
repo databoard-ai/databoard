@@ -35,6 +35,10 @@ module.exports = {
       'grayInactive':'#C3C3C3',
       'inactiveText':'#838282',
       'blackMain':'#121212',
+      'success':'#013220',
+      'warning':'#ff9966',
+      'error':'cc3300',
+      'Info':'#808080',
       'pureWhite':' #FEFEFE',
       'defaultBackground':'#F4F4F4',
       'primaryRed':' #FA4F4F'

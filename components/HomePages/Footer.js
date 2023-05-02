@@ -5,7 +5,7 @@ import Logo1 from '../../public/assets/databoard_assets/artboard_x75.png'
 function Footer() {
     return (
        <div className="footer-container">
-         <div className='footer relative md:fixed bg-[#010A26] px-5 text-pureWhite pt-9'>
+         <div className='footer relative bg-[#010A26] px-5 text-pureWhite pt-9'>
             <div className="grid sm:grid-cols-5 mt-6">
                 <div className="col-span-5 lg:col-span-1 mt-[-15px] mr-5 mb-5">
                     <Image 

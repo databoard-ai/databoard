@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import AlertBox from '../components/HomePages/AlertBox';
+import Toast from '../components/HomePages/Toast';
 
 type Props = {
     value: string;
@@ -28,9 +29,18 @@ const Waitlist: NextPage = () => {
     const [phone, setPhone] = useState('');
     const [buttonText, setButtonText] = useState('Proceed');
     const [buttonDisabled, setButtonDisabled] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
-    const router = useRouter();
 
+    
+
+
+    const [toast, setToast] = useState<{ message: string, type: string } | null>(null);
+
+    const showToast = (message: string, type: string = 'info') => {
+      setToast({ message, type });
+      setTimeout(() => {
+        setToast(null);
+      }, 3000);
+    };
 
     const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
@@ -50,23 +60,20 @@ const Waitlist: NextPage = () => {
         setButtonDisabled(true);
         setButtonText('Loading...');
         if (!name || !email || !phone) {
-        <AlertBox type="error" message="Please fill in all the fields." />
+        showToast('Please fill in allthe fields','warning');
             return;
         }
             try {
             await createRecord(name, email, phone);
+            showToast('Thank you for joining our waitlist','success');
             
             setName("");
             setEmail("");
             setPhone("");
-            <AlertBox type="success" message="Thanks for joining the waitlist" />;
           } catch (error) {
             console.log("This is the error: "+error);
-            <AlertBox type="error" message="Something went wrong." />
+            showToast('Ooops, something went wrong','error');
           }
-        
-          // re-enable the button and clear loading state
-          setIsLoading(false);
           setButtonDisabled(false);
           setButtonText('Proceed');
     };
@@ -97,14 +104,16 @@ const Waitlist: NextPage = () => {
     return (
         <>
             <Navbar />
-            <div className='mt-12 mb-10'>
+         <div className='md:mb-48 lg:mb-96'>
+         <div className='mt-12 mb-10'>
                 <span className='block text-center text-[24px] text-primaryBlue font-semibold'>Join our waitlist</span>
                 <span className='block text-center text-[40px] font-semibold mt-8'>We just need a
                     <span className='text-primaryBlue'> few</span> more details about your Organization</span>
-                <span className='block text-center text-[20px]'>Databoard fits perfectly for organizations big and small. <br />Regardless of your budget</span>
+                    {toast && <Toast message={toast.message} type={toast.type} />}
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-10 mx-auto max-w-lg p-4">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-10 mx-auto max-w-lg p-4 md:p-0 w-full">
+                <span className='block text-center text-[20px]'>Databoard fits perfectly for organizations big and small. <br />Regardless of your budget</span>
                 <div className="flex flex-row items-center gap-4">
                     <label className="flex flex-col w-full">
                         <span>Email Address</span>
@@ -125,6 +134,7 @@ const Waitlist: NextPage = () => {
                     </div>
                 </div>
             </form>
+         </div>
 
             <Footer />
         </>
