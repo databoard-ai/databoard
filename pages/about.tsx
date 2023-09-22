@@ -33,7 +33,7 @@ const About: NextPage = () => {
                     <span className='block text-[20px] text-center w-[90%]'>Our value proposition is to provide African organizations with the tools to collect, sort, and analyze their users' data to provide actionable insights for efficient management and communication. Our data technology transforms the way organizations interact with their audiences, leading to improved customer satisfaction, increased engagement, and business growth.</span>
                 </div> */}
             </div>
-            <div className='team px-3 md:px-12 my-12'>
+{/*             <div className='team px-3 md:px-12 my-12'>
                 <div className='header'>
                     <span className='block text-[32px] lg:text-[50px] text-primaryBlue font-semibold'>Our team</span>
                     <span className='block text-[16px] lg:text-[18px]'>We belive in the strength and uniqness of the young African mind.</span>
@@ -117,7 +117,7 @@ const About: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                
+                 */}
             </div>
             {/* <Brands/> */}
             <Join/>
